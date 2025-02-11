@@ -1,0 +1,174 @@
+/*------------
+    Header
+------------*/
+header
+{
+    position: relative;
+    z-index: 9;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 17px 0;
+
+    color: var(--primary_color);
+}
+
+
+header.absolute
+{
+    position: absolute;
+
+    color: var(--light_text_color);
+}
+
+
+header .cont
+{
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+header .logo
+{
+    font-family: var(--font_family2);
+    font-size: var(--font_size_title_small);
+
+    display: block;
+
+    margin-right: auto;
+
+    text-decoration: none;
+
+    color: currentColor;
+}
+
+
+
+header .langs .btn
+{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    letter-spacing: -.72px;
+
+    gap: 16px;
+}
+
+
+header .langs .btn .icon
+{
+    display: block;
+
+    width: 24px;
+    height: 24px;
+}
+
+
+
+header .links
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-left: 60px;
+
+    gap: 20px;
+}
+
+
+header .links a
+{
+    display: block;
+
+    text-decoration: none;
+
+    color: currentColor;
+}
+
+
+header .links .icon
+{
+    display: block;
+
+    width: 28px;
+    height: 28px;
+}
+
+
+
+@media print,
+(max-width: 1439px)
+{
+    header .langs .btn
+    {
+        font-size: var(--font_size_middle);
+    }
+
+
+    header .links
+    {
+        margin-left: 48px;
+    }
+}
+
+
+
+@media print,
+(max-width: 1279px)
+{
+    header .langs .btn
+    {
+        gap: 12px;
+    }
+
+
+    header .langs .btn .icon
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    header .links .icon
+    {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+
+@media print,
+(max-width: 479px)
+{
+    header .logo
+    {
+        font-size: 18px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+
+    header .links
+    {
+        gap: 16px;
+    }
+}

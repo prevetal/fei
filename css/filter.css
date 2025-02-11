@@ -1,0 +1,368 @@
+/*------------
+    Filter
+------------*/
+.filter
+{
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    right: 100%;
+
+    overflow: auto;
+
+    width: 1450px;
+    max-width: calc(100% - (var(--cont_padding) * 3));
+    height: 100%;
+    padding: 80px 100px 40px 200px;
+
+    transition: transform .35s linear;
+
+    background: var(--bg);
+
+    overscroll-behavior-y: contain;
+}
+
+
+.filter.show
+{
+    transform: translateX(100%);
+}
+
+
+.filter .title
+{
+    font-family: var(--font_family2);
+    font-size: var(--font_size_title);
+    font-weight: 400;
+    line-height: 100%;
+
+    margin-bottom: 40px;
+
+    color: var(--black_text_color);
+}
+
+
+.filter .form
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.filter .form .spoler_btn
+{
+    font-size: var(--font_size_middle);
+    font-weight: 500;
+    line-height: 120%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    padding: 7px 23px;
+
+    transition: .2s linear;
+    letter-spacing: -.6px;
+
+    color: var(--primary_color);
+    border: 1px solid var(--primary_color);
+    border-radius: 24px;
+
+    gap: 16px;
+}
+
+
+.filter .form .spoler_btn span
+{
+    margin-bottom: 4px;
+}
+
+
+.filter .form .spoler_btn .icon
+{
+    position: relative;
+    top: -2px;
+
+    display: block;
+
+    width: 28px;
+    height: 28px;
+
+    transition: .2s linear;
+}
+
+
+.filter .form .spoler_btn:hover,
+.filter .form .spoler_btn.active
+{
+    color: var(--light_text_color);
+    background: var(--primary_color);
+}
+
+
+.filter .form .spoler_btn.active .icon
+{
+    top: 2px;
+
+    transform: rotate(180deg);
+}
+
+
+.filter .form .data
+{
+    display: none;
+
+    padding: 30px 0 10px;
+}
+
+
+.filter .form .data .row
+{
+    margin-bottom: -20px;
+    margin-left: -20px;
+}
+
+
+.filter .form .data .row > *
+{
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+
+.filter .form .checkbox
+{
+    line-height: 120%;
+
+    position: relative;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    min-height: 28px;
+    padding-left: 44px;
+
+    cursor: pointer;
+    letter-spacing: -.54px;
+}
+
+
+.filter .form .checkbox input
+{
+    display: none;
+}
+
+
+.filter .form .checkbox .check
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 28px;
+    height: 28px;
+}
+
+
+.filter .form .checkbox .check svg
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.filter .form .checkbox .check svg + svg
+{
+    display: none;
+}
+
+
+.filter .form .checkbox input:checked + .check svg
+{
+    display: none;
+}
+
+.filter .form .checkbox input:checked + .check svg + svg
+{
+    display: block;
+}
+
+
+.filter .form .submit_btn
+{
+    font-size: var(--font_size_middle);
+    font-weight: 500;
+    line-height: 120%;
+
+    display: block;
+
+    width: 301px;
+    max-width: 100%;
+    margin-left: auto;
+    padding: 16px;
+
+    letter-spacing: -.4px;
+    text-transform: uppercase;
+
+    color: var(--light_text_color);
+    background: var(--primary_color);
+}
+
+
+
+@media print,
+(max-width: 1439px)
+{
+    .filter
+    {
+        padding: 60px 80px 40px 120px;
+    }
+
+
+    .filter .form .spoler_btn .icon
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .filter .form .data
+    {
+        padding: 24px 0 8px;
+    }
+
+
+    .filter .form .data .row
+    {
+        margin-bottom: -16px;
+    }
+
+
+    .filter .form .data .row > *
+    {
+        margin-bottom: 16px;
+    }
+
+
+    .filter .form .submit_btn
+    {
+        width: 280px;
+    }
+}
+
+
+
+@media print,
+(max-width: 1279px)
+{
+    .filter
+    {
+        padding: 48px 60px 40px 80px;
+    }
+
+
+    .filter .form .data .row > *
+    {
+        width: calc(33.333% - 20px);
+    }
+}
+
+
+
+@media print,
+(max-width: 1023px)
+{
+    .filter
+    {
+        padding: 40px 60px;
+    }
+
+
+    .filter .form .spoler_btn
+    {
+        gap: 12px;
+    }
+
+
+    .filter .form .data .row > *
+    {
+        width: calc(50% - 20px);
+    }
+}
+
+
+
+@media print,
+(max-width: 767px)
+{
+    .filter
+    {
+        max-width: 100%;
+        padding: 32px var(--cont_padding);
+    }
+
+
+    .filter .title
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .filter .form .data .row
+    {
+        margin-bottom: -12px;
+    }
+
+
+    .filter .form .data .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 12px;
+    }
+
+
+    .filter .form .submit_btn
+    {
+        width: 100%;
+    }
+}
+
+
+
+@media print,
+(max-width: 479px)
+{
+    .filter .form .data
+    {
+        padding: 20px 0 4px;
+    }
+
+
+    .filter .form .data .row
+    {
+        margin-left: 0;
+    }
+
+
+    .filter .form .data .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .filter .form .submit
+    {
+        padding-top: 12px;
+    }
+}

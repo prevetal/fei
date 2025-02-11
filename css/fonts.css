@@ -1,0 +1,27 @@
+/*-----------
+    Fonts
+-----------*/
+@font-face
+{
+    font-family: 'Exo 2';
+    font-weight: 500;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/Exo2-Medium.woff2') format('woff2'),
+    url('../fonts/Exo2-Medium.woff') format('woff'),
+    url('../fonts/Exo2-Medium.ttf') format('truetype');
+}
+
+
+@font-face
+{
+    font-family: 'Vetrino';
+    font-weight: normal;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/vetrino.woff2') format('woff2'),
+    url('../fonts/vetrino.woff') format('woff'),
+    url('../fonts/vetrino.ttf') format('truetype');
+}

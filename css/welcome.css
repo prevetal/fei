@@ -1,0 +1,102 @@
+/*-------------
+    Welcome
+-------------*/
+.welcome .cont
+{
+    justify-content: space-between;
+}
+
+
+.welcome .data
+{
+    display: flex;
+    flex-direction: column;
+
+    width: calc(50% - 10px);
+
+    gap: 40px;
+}
+
+
+.welcome .title
+{
+    font-family: var(--font_family2);
+    font-size: var(--font_size_title);
+    font-weight: 400;
+    line-height: 100%;
+}
+
+
+.welcome .text_block
+{
+    width: 671px;
+    max-width: 100%;
+}
+
+
+.welcome .image
+{
+    width: calc(50% - 20px);
+}
+
+
+.welcome .image img
+{
+    display: block;
+
+    width: 100%;
+}
+
+
+
+@media print,
+(max-width: 1279px)
+{
+    .welcome .data
+    {
+        width: 50%;
+
+        gap: var(--cont_padding);
+    }
+
+
+    .welcome .image
+    {
+        width: calc(50% - 48px);
+    }
+}
+
+
+
+@media print,
+(max-width: 1023px)
+{
+    .welcome .data
+    {
+        width: 100%;
+    }
+
+
+    .welcome .image
+    {
+        width: 100%;
+        margin-top: var(--cont_padding);
+    }
+}
+
+
+
+@media print,
+(max-width: 479px)
+{
+    .welcome .data
+    {
+        gap: 32px;
+    }
+
+
+    .welcome .image
+    {
+        margin-top: calc(var(--cont_padding) * 2);
+    }
+}

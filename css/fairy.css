@@ -1,0 +1,1060 @@
+/*----------------
+    Fairy info
+----------------*/
+.fairy_info
+{
+    padding-top: 63px;
+}
+
+
+.fairy_info .number
+{
+    font-size: var(--font_size_middle);
+    line-height: 120%;
+
+    margin-bottom: 38px;
+
+    letter-spacing: -.6px;
+
+    color: rgba(0, 0, 0, .60);
+}
+
+
+.fairy_info .images
+{
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: calc(100% - 366px);
+    margin-left: -220px;
+}
+
+
+.fairy_info .images .big
+{
+    width: calc(100% - 264px);
+}
+
+
+.fairy_info .images .small
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 237px;
+    max-width: 100%;
+
+    gap: 23px;
+}
+
+
+.fairy_info .images a
+{
+    display: block;
+
+    text-decoration: none;
+
+    color: currentColor;
+}
+
+
+.fairy_info .images img
+{
+    display: block;
+
+    width: 100%;
+}
+
+
+.fairy_info .data
+{
+    position: relative;
+
+    width: 493px;
+    max-width: 100%;
+    margin-left: auto;
+}
+
+
+.fairy_info .name
+{
+    font-family: var(--font_family2);
+    font-size: var(--font_size_title_middle);
+
+    padding-right: 48px;
+
+    color: #611616;
+}
+
+
+.fairy_info .favorite_btn
+{
+    position: absolute;
+    z-index: 9;
+    top: 6px;
+    right: 0;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    color: var(--primary_color);
+}
+
+
+.fairy_info .favorite_btn .icon
+{
+    width: 32px;
+    height: 32px;
+}
+
+
+.fairy_info .online
+{
+    font-size: var(--font_size_middle);
+    line-height: 120%;
+
+    margin-top: 12px;
+
+    letter-spacing: -.6px;
+
+    color: rgba(0, 0, 0, .60);
+}
+
+
+.fairy_info .location
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-top: 12px;
+
+    gap: 16px;
+}
+
+
+.fairy_info .location .sep
+{
+    width: 1px;
+    height: 45px;
+
+    background: rgba(0, 0, 0, .20);
+}
+
+
+.fairy_info .metro
+{
+    font-size: var(--font_size_middle);
+    line-height: 120%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    letter-spacing: -.6px;
+    text-transform: uppercase;
+
+    color: rgba(0, 0, 0, .60);
+
+    gap: 12px;
+}
+
+
+.fairy_info .metro .icon
+{
+    display: block;
+
+    width: 24px;
+    height: 29px;
+
+    opacity: .6;
+    color: #ffa4e0;
+}
+
+
+.fairy_info .work_time
+{
+    font-size: var(--font_size_middle);
+    line-height: 120%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    letter-spacing: -.6px;
+    text-transform: uppercase;
+
+    color: rgba(0, 0, 0, .60);
+
+    gap: 9px;
+}
+
+
+.fairy_info .work_time .icon
+{
+    display: block;
+
+    width: 24px;
+    height: 24px;
+
+    color: var(--black_text_color);
+}
+
+
+.fairy_info .contacts
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 76px;
+}
+
+
+.fairy_info .get_phone_btn
+{
+    font-family: var(--font_family2);
+    font-size: 24px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: calc(100% - 119px);
+    height: 65px;
+    padding: 15px 32px;
+
+    color: var(--light_text_color);
+    background: var(--primary_color);
+
+    gap: 19px;
+}
+
+
+.fairy_info .get_phone_btn .icon
+{
+    display: block;
+
+    width: 24px;
+    height: 24px;
+}
+
+
+.fairy_info .messengers
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-left: auto;
+
+    gap: 15px;
+}
+
+
+.fairy_info .messengers .icon
+{
+    display: block;
+
+    width: 46px;
+    height: 46px;
+
+    opacity: .6;
+    color: var(--black_text_color);
+}
+
+
+
+.fairy_info .options
+{
+    font-size: var(--font_size_middle);
+    line-height: 120%;
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-top: 23px;
+
+    letter-spacing: -.6px;
+
+    color: rgba(0, 0, 0, .60);
+
+    gap: 12px;
+}
+
+
+.fairy_info .options > *
+{
+    padding: 8px 27px;
+
+    transition: .2s linear;
+
+    border: 1px solid rgba(97, 22, 22, .40);
+    border-radius: 100px;
+}
+
+
+.fairy_info .options > *.highlighted
+{
+    color: var(--light_text_color);
+    border-color: transparent;
+    background: rgba(97, 22, 22, .40);
+}
+
+
+
+.fairy_info .features
+{
+    margin-top: 96px;
+}
+
+
+.fairy_info .features .title
+{
+    font-family: var(--font_family2);
+    font-size: var(--font_size_title_small);
+
+    margin-bottom: 37px;
+
+    color: var(--primary_color);
+}
+
+
+.fairy_info .features .items
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 19px;
+}
+
+
+.fairy_info .features .items > *
+{
+    font-size: var(--font_size_middle);
+    line-height: 120%;
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    white-space: nowrap;
+    letter-spacing: -.6px;
+
+    color: rgba(0, 0, 0, .60);
+}
+
+
+.fairy_info .features .label
+{
+    text-transform: uppercase;
+}
+
+
+.fairy_info .features .line
+{
+    width: 100%;
+    height: 1px;
+    margin-top: 20px;
+
+    background: rgba(148, 148, 148, .20);
+}
+
+
+.fairy_info .desc
+{
+    margin-top: 38px;
+
+    text-align: justify;
+
+    color: #444143;
+}
+
+
+.fairy_info .prices
+{
+    margin-top: 44px;
+}
+
+
+.fairy_info .prices .title
+{
+    font-family: var(--font_family2);
+    font-size: var(--font_size_title_small);
+
+    margin-bottom: 28px;
+
+    color: var(--primary_color);
+}
+
+
+.fairy_info .prices .info
+{
+    padding: 32px;
+
+    color: var(--light_text_color);
+    background: var(--primary_color);
+}
+
+
+.fairy_info .prices .section + .section
+{
+    margin-top: 28px;
+    padding-top: 28px;
+
+    border-top: 1px solid rgba(148, 148, 148, .20);
+}
+
+
+.fairy_info .prices .sub_title
+{
+    font-family: var(--font_family2);
+    font-size: 24px;
+    line-height: 135%;
+
+    margin-bottom: 32px;
+
+    text-transform: uppercase;
+}
+
+
+.fairy_info .prices .items
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 19px;
+}
+
+
+.fairy_info .prices .items > *
+{
+    font-size: var(--font_size_middle);
+    line-height: 120%;
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    letter-spacing: -.6px;
+    text-transform: uppercase;
+}
+
+
+.fairy_info .prices .label
+{
+    margin-right: 20px;
+
+    text-transform: uppercase;
+}
+
+
+.fairy_info .services
+{
+    margin-top: 44px;
+}
+
+
+.fairy_info .services .title
+{
+    font-family: var(--font_family2);
+    font-size: var(--font_size_title_small);
+
+    margin-bottom: 28px;
+
+    color: var(--primary_color);
+}
+
+
+.fairy_info .services .section + .section
+{
+    margin-top: 40px;
+}
+
+
+.fairy_info .services .sub_title
+{
+    font-size: var(--font_size_middle);
+    font-weight: 500;
+    line-height: 120%;
+
+    margin-bottom: 28px;
+    padding: 15px;
+
+    text-align: center;
+    letter-spacing: -.4px;
+    text-transform: uppercase;
+
+    color: var(--primary_text_color);
+    border: 1px solid var(--primary_text_color);
+}
+
+
+.fairy_info .services .items
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 28px;
+}
+
+
+.fairy_info .services .items > *
+{
+    font-size: var(--font_size_middle);
+    line-height: 120%;
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    letter-spacing: -.6px;
+    text-transform: uppercase;
+
+    color: rgba(0, 0, 0, .60);
+}
+
+
+.fairy_info .services .label
+{
+    margin-right: 20px;
+
+    text-transform: uppercase;
+}
+
+
+.fairy_info .services .exp
+{
+    font-size: var(--font_size);
+    line-height: 120%;
+
+    width: 100%;
+    margin-top: 12px;
+
+    letter-spacing: -.54px;
+    text-transform: none;
+
+    color: rgba(97, 22, 22, .60);
+}
+
+
+
+@media print,
+(max-width: 1899px)
+{
+    .fairy_info
+    {
+        padding-top: 48px;
+    }
+
+
+    .fairy_info .number
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .fairy_info .images
+    {
+        width: calc(100% - 517px);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .fairy_info .images .big
+    {
+        width: calc(100% - 204px);
+    }
+
+
+    .fairy_info .images .small
+    {
+        width: 180px;
+
+        gap: var(--cont_padding);
+    }
+
+
+    .fairy_info .location .sep
+    {
+        height: 40px;
+    }
+
+
+    .fairy_info .contacts
+    {
+        margin-top: 60px;
+    }
+
+
+    .fairy_info .get_phone_btn
+    {
+        font-size: 22px;
+
+        height: auto;
+    }
+
+
+    .fairy_info .messengers .icon
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .fairy_info .options
+    {
+        margin-top: 20px;
+    }
+
+
+    .fairy_info .features
+    {
+        margin-top: 80px;
+    }
+
+
+    .fairy_info .features .title
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .fairy_info .features .items
+    {
+        gap: 16px;
+    }
+
+
+    .fairy_info .desc
+    {
+        margin-top: 40px;
+    }
+
+
+    .fairy_info .prices
+    {
+        margin-top: 40px;
+    }
+
+
+    .fairy_info .prices .info
+    {
+        padding: 28px;
+    }
+
+
+    .fairy_info .prices .sub_title
+    {
+        font-size: 22px;
+
+        margin-bottom: 28px;
+    }
+
+
+    .fairy_info .prices .items
+    {
+        gap: 16px;
+    }
+
+
+    .fairy_info .services
+    {
+        margin-top: 40px;
+    }
+
+
+    .fairy_info .services .items
+    {
+        gap: 24px;
+    }
+
+
+    .fairy_info .services .exp
+    {
+        margin-top: 8px;
+    }
+}
+
+
+
+@media print,
+(max-width: 1439px)
+{
+    .fairy_info
+    {
+        padding-top: 40px;
+    }
+
+
+    .fairy_info .number
+    {
+        margin-bottom: 28px;
+    }
+
+
+    .fairy_info .images
+    {
+        width: calc(100% - 492px);
+    }
+
+
+    .fairy_info .images .big
+    {
+        width: calc(100% - 176px);
+    }
+
+
+    .fairy_info .images .small
+    {
+        width: 152px;
+    }
+
+
+    .fairy_info .data
+    {
+        width: 468px;
+    }
+
+
+    .fairy_info .location .sep
+    {
+        height: 32px;
+    }
+
+
+    .fairy_info .contacts
+    {
+        margin-top: 48px;
+    }
+
+
+    .fairy_info .get_phone_btn
+    {
+        font-size: 20px;
+    }
+
+
+    .fairy_info .features
+    {
+        margin-top: 60px;
+    }
+
+
+    .fairy_info .features .title
+    {
+        margin-bottom: 28px;
+    }
+
+
+    .fairy_info .prices .sub_title
+    {
+        font-size: 20px;
+    }
+
+
+    .fairy_info .services .sub_title
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .fairy_info .services .items
+    {
+        gap: 20px;
+    }
+}
+
+
+
+@media print,
+(max-width: 1279px)
+{
+    .fairy_info
+    {
+        padding-top: 32px;
+    }
+
+
+    .fairy_info .number
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .fairy_info .images
+    {
+        width: calc(100% - 448px);
+    }
+
+
+    .fairy_info .images .big
+    {
+        width: calc(100% - 112px);
+    }
+
+
+    .fairy_info .images .small
+    {
+        width: 100px;
+
+        gap: 12px;
+    }
+
+
+    .fairy_info .data
+    {
+        width: 424px;
+    }
+
+
+    .fairy_info .contacts
+    {
+        margin-top: 40px;
+    }
+
+
+    .fairy_info .get_phone_btn
+    {
+        font-size: 18px;
+    }
+
+
+    .fairy_info .options > *
+    {
+        padding: 7px 19px;
+    }
+
+
+    .fairy_info .prices .info
+    {
+        padding: 24px;
+    }
+
+
+    .fairy_info .prices .sub_title
+    {
+        margin-bottom: 24px;
+    }
+}
+
+
+
+@media print,
+(max-width: 1023px)
+{
+    .fairy_info .images
+    {
+        position: relative;
+        top: 0;
+
+        width: calc(100% + var(--cont_padding) * 2);
+        margin-right: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .fairy_info .images .big
+    {
+        width: calc(100% - 152px);
+    }
+
+
+    .fairy_info .images .small
+    {
+        width: 140px;
+    }
+
+
+    .fairy_info .data
+    {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+    .fairy_info .favorite_btn
+    {
+        top: 2px;
+    }
+}
+
+
+
+@media print,
+(max-width: 767px)
+{
+    .fairy_info .images .big
+    {
+        width: calc(100% - 112px);
+    }
+
+
+    .fairy_info .images .small
+    {
+        width: 100px;
+    }
+
+
+    .fairy_info .data
+    {
+        margin-top: 32px;
+    }
+
+
+    .fairy_info .favorite_btn
+    {
+        top: 0;
+    }
+
+
+    .fairy_info .features .line
+    {
+        margin-top: 16px;
+    }
+}
+
+
+
+@media print,
+(max-width: 479px)
+{
+    .fairy_info .images .big
+    {
+        width: 100%;
+    }
+
+
+    .fairy_info .images .small
+    {
+        display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        width: calc(100% + 8px);
+        max-width: calc(100% + 8px);
+        margin-top: 8px;
+        margin-left: -8px;
+
+        gap: 0;
+    }
+
+
+    .fairy_info .images .small > *
+    {
+        width: calc(33.333% - 8px);
+        margin-left: 8px;
+    }
+
+
+    .fairy_info .favorite_btn .icon
+    {
+        width: 28px;
+        height: 28px;
+    }
+
+
+    .fairy_info .get_phone_btn
+    {
+        width: calc(100% - 99px);
+        padding: 15px 24px;
+    }
+
+
+    .fairy_info .messengers .icon
+    {
+        width: 32px;
+        height: 32px;
+    }
+
+
+    .fairy_info .options
+    {
+        margin-top: 16px;
+
+        gap: 8px;
+    }
+
+
+    .fairy_info .options > *
+    {
+        padding: 6px 18px;
+    }
+
+
+    .fairy_info .features
+    {
+        margin-top: 48px;
+    }
+
+
+    .fairy_info .features .title
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .fairy_info .prices .title
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .fairy_info .prices .sub_title
+    {
+        font-size: 18px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .fairy_info .services .title
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .fairy_info .services .sub_title
+    {
+        padding: 11px;
+    }
+
+
+    .fairy_info .services .exp
+    {
+        margin-top: 4px;
+    }
+}

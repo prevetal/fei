@@ -1,0 +1,364 @@
+/*-------------------
+    Promo fairies
+-------------------*/
+.promo_fairies .item
+{
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.promo_fairies .thumb
+{
+    position: relative;
+
+    display: block;
+
+    width: 50%;
+    min-height: 850px;
+
+    text-decoration: none;
+
+    color: currentColor;
+}
+
+
+.promo_fairies .thumb img
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.promo_fairies .thumb .category
+{
+    font-family: var(--font_family2);
+    font-size: var(--font_size_title);
+    font-weight: 400;
+    line-height: 100%;
+
+    position: absolute;
+    z-index: 3;
+    right: 40px;
+    bottom: 40px;
+
+    pointer-events: none;
+
+    color: var(--light_text_color);
+}
+
+
+.promo_fairies .data
+{
+    width: 50%;
+    padding: 109px 200px 109px 194px;
+
+    color: var(--light_text_color);
+    background: var(--primary_color);
+}
+
+
+.promo_fairies .name
+{
+    font-family: var(--font_family2);
+    font-size: var(--font_size_title);
+    font-weight: 400;
+    line-height: 100%;
+}
+
+
+.promo_fairies .name a
+{
+    display: inline-block;
+
+    vertical-align: top;
+    text-decoration: none;
+
+    color: currentColor;
+}
+
+
+.promo_fairies .desc
+{
+    line-height: 120%;
+
+    margin-top: 40px;
+
+    letter-spacing: -.54px;
+}
+
+
+.promo_fairies .prices
+{
+    margin-top: 20px;
+}
+
+
+.promo_fairies .prices table
+{
+    width: 100%;
+
+    table-layout: fixed;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+.promo_fairies .prices table th
+{
+    font-size: var(--font_size_middle);
+    font-weight: 500;
+    line-height: 120%;
+
+    padding-bottom: 20px;
+
+    text-align: left;
+    vertical-align: middle;
+    letter-spacing: -.6px;
+}
+
+
+.promo_fairies .prices td
+{
+    line-height: 120%;
+
+    text-align: left;
+    vertical-align: middle;
+    letter-spacing: -.54px;
+}
+
+
+.promo_fairies .prices tr + tr td
+{
+    padding-top: 16px;
+}
+
+
+.promo_fairies .prices th + th,
+.promo_fairies .prices td + td
+{
+    padding-left: 40px;
+}
+
+
+.promo_fairies .link
+{
+    font-size: var(--font_size_middle);
+    font-weight: 500;
+    line-height: 120%;
+
+    display: flex;
+
+    margin-top: 60px;
+
+    letter-spacing: -.6px;
+    text-transform: uppercase;
+}
+
+
+.promo_fairies .link a
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    text-decoration: none;
+
+    color: currentColor;
+
+    gap: 16px;
+}
+
+
+.promo_fairies .link .icon
+{
+    display: block;
+
+    width: 28px;
+    height: 28px;
+}
+
+
+
+@media print,
+(max-width: 1899px)
+{
+    .promo_fairies .data
+    {
+        padding: 100px;
+    }
+}
+
+
+
+@media print,
+(max-width: 1439px)
+{
+    .promo_fairies .thumb
+    {
+        min-height: 650px;
+    }
+
+
+    .promo_fairies .data
+    {
+        padding: 100px 80px 80px;
+    }
+}
+
+
+
+@media print,
+(max-width: 1279px)
+{
+    .promo_fairies .thumb
+    {
+        min-height: 550px;
+    }
+
+
+    .promo_fairies .data
+    {
+        padding: 60px 48px;
+    }
+
+
+    .promo_fairies .desc
+    {
+        margin-top: 24px;
+    }
+
+
+    .promo_fairies .prices table th
+    {
+        padding-bottom: 12px;
+    }
+
+
+    .promo_fairies .prices th + th,
+    .promo_fairies .prices td + td
+    {
+        padding-left: 24px;
+    }
+
+
+    .promo_fairies .prices tr + tr td
+    {
+        padding-top: 12px;
+    }
+
+
+    .promo_fairies .link
+    {
+        margin-top: 48px;
+    }
+
+
+    .promo_fairies .link a
+    {
+        gap: 12px;
+    }
+
+
+    .promo_fairies .link .icon
+    {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+
+@media print,
+(max-width: 1023px)
+{
+    .promo_fairies .thumb
+    {
+        width: 100%;
+        min-height: 406px;
+    }
+
+
+    .promo_fairies .thumb .category
+    {
+        right: var(--cont_padding);
+        bottom: var(--cont_padding);
+    }
+
+
+    .promo_fairies .data
+    {
+        width: 100%;
+        padding: 48px;
+    }
+}
+
+
+
+@media print,
+(max-width: 1023px)
+{
+    .promo_fairies .data
+    {
+        padding: calc(var(--cont_padding) * 2) var(--cont_padding);
+    }
+
+
+    .promo_fairies .desc
+    {
+        margin-top: 32px;
+    }
+
+
+    .promo_fairies .prices
+    {
+        margin-top: 24px;
+    }
+
+
+    .promo_fairies .prices table th
+    {
+        font-size: 18px;
+    }
+
+
+    .promo_fairies .prices td
+    {
+        font-size: var(--font_size_middle);
+    }
+
+
+    .promo_fairies .link
+    {
+        font-size: var(--font_size);
+
+        margin-top: 32px;
+    }
+
+
+    .promo_fairies .link .icon
+    {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+
+@media print,
+(max-width: 479px)
+{
+    .promo_fairies .data
+    {
+        padding: calc(var(--cont_padding)* 4) var(--cont_padding);
+    }
+}

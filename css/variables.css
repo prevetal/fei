@@ -1,0 +1,114 @@
+/*---------------
+    Variables
+---------------*/
+:root
+{
+    --bg: #fff;
+    --scroll_width: 17px;
+    --primary_color: #611616;
+    --primary_text_color: #260202;
+    --black_text_color: #000;
+    --light_text_color: #fff;
+    --font_size: 18px;
+    --font_size_middle: 20px;
+    --font_size_title: 64px;
+    --font_size_title_small: 32px;
+    --font_size_title_middle: 40px;
+    --font_size_title_big: 96px;
+    --cont_width: 1520px;
+    --cont_padding: 24px;
+    --block_margin: 170px;
+    --block_margin_middle: 122px;
+    --block_margin_small: 80px;
+    --block_margin_smallest: 46px;
+    --font_family: 'Exo 2', 'Arial', sans-serif;
+    --font_family2: 'Vetrino', 'Arial', sans-serif;
+}
+
+
+
+@media print,
+(max-width: 1439px)
+{
+    :root
+    {
+        --font_size: 16px;
+        --font_size_middle: 18px;
+        --font_size_title: 56px;
+        --font_size_title_small: 32px;
+        --font_size_title_middle: 40px;
+        --font_size_title_big: 76px;
+        --block_margin: 140px;
+        --block_margin_middle: 100px;
+        --block_margin_small: 80px;
+        --block_margin_smallest: 48px;
+    }
+}
+
+
+
+@media print,
+(max-width: 1279px)
+{
+    :root
+    {
+        --font_size_title: 48px;
+        --font_size_title_small: 32px;
+        --font_size_title_middle: 40px;
+        --font_size_title_big: 64px;
+        --block_margin: 120px;
+        --block_margin_middle: 92px;
+        --block_margin_small: 72px;
+        --block_margin_smallest: 48px;
+    }
+}
+
+
+
+@media print,
+(max-width: 1023px)
+{
+    :root
+    {
+        --font_size_title: 40px;
+        --font_size_title_small: 28px;
+        --font_size_title_middle: 32px;
+        --font_size_title_big: 52px;
+    }
+}
+
+
+
+@media print,
+(max-width: 767px)
+{
+    :root
+    {
+        --cont_padding: 20px;
+        --font_size: 15px;
+        --font_size_middle: 16px;
+        --font_size_title: 32px;
+        --font_size_title_small: 24px;
+        --font_size_title_middle: 28px;
+        --font_size_title_big: 40px;
+        --block_margin: 80px;
+        --block_margin_middle: 80px;
+        --block_margin_small: 60px;
+        --block_margin_smallest: 48px;
+    }
+}
+
+
+
+@media print,
+(max-width: 479px)
+{
+    :root
+    {
+        --cont_padding: 8px;
+        --font_size_title: 24px;
+        --font_size_title_small: 24px;
+        --font_size_title_middle: 24px;
+        --font_size_title_big: 36px;
+    }
+}

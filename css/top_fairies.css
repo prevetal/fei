@@ -1,0 +1,188 @@
+/*-----------------
+    Top fairies
+-----------------*/
+.top_fairies .row
+{
+    gap: 20px;
+}
+
+
+.top_fairies .row > *
+{
+    width: calc(50% - 10px);
+}
+
+
+.top_fairies .item
+{
+    position: relative;
+
+    display: block;
+
+    text-decoration: none;
+
+    color: var(--light_text_color);
+}
+
+
+.top_fairies .item .thumb
+{
+    position: relative;
+
+    padding-bottom: 84.210%;
+
+    background: #000;
+}
+
+
+.top_fairies .item .thumb img
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.top_fairies .item .info
+{
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px;
+
+    gap: 20px;
+}
+
+
+.top_fairies .item .name
+{
+    font-family: var(--font_family2);
+    font-size: var(--font_size_title);
+    font-weight: 400;
+    line-height: 100%;
+}
+
+
+.top_fairies .item .link
+{
+    font-size: var(--font_size_middle);
+    font-weight: 500;
+    line-height: 120%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    letter-spacing: -.4px;
+    text-transform: uppercase;
+
+    gap: 16px;
+}
+
+
+.top_fairies .item .link .icon
+{
+    display: block;
+
+    width: 28px;
+    height: 28px;
+}
+
+
+
+@media print,
+(max-width: 1279px)
+{
+    .top_fairies .item .info
+    {
+        padding: var(--cont_padding);
+    }
+
+
+    .top_fairies .item .link
+    {
+        gap: 12px;
+    }
+
+
+    .top_fairies .item .link .icon
+    {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+
+@media print,
+(max-width: 1023px)
+{
+    .top_fairies .row
+    {
+        padding: 0 var(--cont_padding);
+
+        gap: var(--cont_padding);
+    }
+
+
+    .top_fairies .row > *
+    {
+        width: 100%;
+    }
+}
+
+
+
+@media print,
+(max-width: 767px)
+{
+    .top_fairies .item .info
+    {
+        gap: 10px;
+    }
+
+
+    .top_fairies .item .link
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .top_fairies .item .link .icon
+    {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+
+@media print,
+(max-width: 479px)
+{
+    .top_fairies .row
+    {
+        gap: calc(var(--cont_padding) * 2);
+    }
+
+
+    .top_fairies .item .info
+    {
+        padding: calc(var(--cont_padding) * 2);
+    }
+}

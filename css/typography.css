@@ -1,0 +1,34 @@
+.text_block
+{
+    line-height: 120%;
+
+    letter-spacing: -.54px;
+}
+
+
+.text_block > *
+{
+    margin-bottom: 20px;
+}
+
+
+.text_block > :last-child
+{
+    margin-bottom: 0 !important;
+}
+
+.text_block > :first-child
+{
+    margin-top: 0 !important;
+}
+
+
+
+@media print,
+(max-width: 767px)
+{
+    .text_block
+    {
+        font-size: var(--font_size_middle);
+    }
+}

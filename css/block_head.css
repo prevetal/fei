@@ -1,0 +1,40 @@
+/*----------------
+    Block head
+----------------*/
+.block_head
+{
+    margin-bottom: 40px;
+}
+
+
+.block_head .title
+{
+    font-family: var(--font_family2);
+    font-size: var(--font_size_title);
+    font-weight: 400;
+    line-height: 100%;
+
+    display: block;
+}
+
+
+
+@media print,
+(max-width: 1279px)
+{
+    .block_head
+    {
+        margin-bottom: 28px;
+    }
+}
+
+
+
+@media print,
+(max-width: 767px)
+{
+    .block_head
+    {
+        margin-bottom: 24px;
+    }
+}
