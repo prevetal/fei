@@ -198,6 +198,28 @@
 }
 
 
+.filter .form .submit
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    gap: 20px;
+}
+
+
+.filter .form .cancel_btn
+{
+    line-height: 120%;
+
+    letter-spacing: -.54px;
+
+    color: var(--black_text_color);
+}
+
+
 .filter .form .submit_btn
 {
     font-size: var(--font_size_middle);
@@ -208,7 +230,6 @@
 
     width: 301px;
     max-width: 100%;
-    margin-left: auto;
     padding: 16px;
 
     letter-spacing: -.4px;

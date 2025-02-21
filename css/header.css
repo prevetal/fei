@@ -48,6 +48,44 @@ header .logo
 
 
 
+header .menu
+{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    letter-spacing: -.72px;
+
+    color: var(--primary_color);
+
+    gap: 80px;
+}
+
+
+header .menu a
+{
+    display: inline-block;
+
+    vertical-align: top;
+    text-decoration: none;
+
+    color: currentColor;
+}
+
+
+
+header .langs
+{
+    margin-left: auto;
+}
+
+
 header .langs .btn
 {
     font-size: 24px;
@@ -113,6 +151,14 @@ header .links .icon
 @media print,
 (max-width: 1439px)
 {
+    header .menu
+    {
+        font-size: var(--font_size_middle);
+
+        gap: 48px;
+    }
+
+
     header .langs .btn
     {
         font-size: var(--font_size_middle);
@@ -130,6 +176,12 @@ header .links .icon
 @media print,
 (max-width: 1279px)
 {
+    header .menu
+    {
+        gap: 40px;
+    }
+
+
     header .langs .btn
     {
         gap: 12px;
@@ -153,6 +205,36 @@ header .links .icon
 
 
 @media print,
+(max-width: 1023px)
+{
+    header .menu
+    {
+        gap: 24px;
+    }
+
+
+    header .links
+    {
+        margin-left: 32px;
+
+        gap: 16px;
+    }
+}
+
+
+
+@media print,
+(max-width: 767px)
+{
+    header .menu
+    {
+        display: none;
+    }
+}
+
+
+
+@media print,
 (max-width: 479px)
 {
     header .logo
@@ -167,8 +249,16 @@ header .links .icon
     }
 
 
+    header .langs
+    {
+        margin-left: 0;
+    }
+
+
     header .links
     {
+        margin-left: 0;
+
         gap: 16px;
     }
 }

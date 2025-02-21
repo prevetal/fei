@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		$('body').addClass('lock')
 	})
 
-	$('.overlay').click(function(e) {
+	$('.filter .cancel_btn, .overlay').click(function(e) {
 		e.preventDefault()
 
 		$('.overlay').fadeOut(200)

@@ -3,6 +3,8 @@
 ------------*/
 footer
 {
+    padding: 35px 0;
+
     color: var(--light_text_color);
     background: var(--primary_color);
 }
