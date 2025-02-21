@@ -29,6 +29,32 @@
 }
 
 
+.filter .close_btn
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+}
+
+
+.filter .close_btn .icon
+{
+    display: block;
+
+    width: 40px;
+    height: 40px;
+}
+
+
 .filter .title
 {
     font-family: var(--font_family2);
@@ -333,6 +359,14 @@
     }
 
 
+    .filter .close_btn,
+    .filter .close_btn .icon
+    {
+        width: 32px;
+        height: 32px;
+    }
+
+
     .filter .title
     {
         margin-bottom: 32px;
@@ -354,8 +388,9 @@
 
     .filter .form .cancel_btn
     {
-        margin: 0 auto;
         order: 2;
+
+        margin: 0 auto;
     }
 
 
