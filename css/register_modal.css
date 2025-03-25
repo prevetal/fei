@@ -1,0 +1,269 @@
+/*--------------------
+    Register modal
+--------------------*/
+#register_modal
+{
+    width: 1325px;
+    padding: 0;
+
+    color: var(--light_text_color);
+    border: none;
+    background: var(--primary_color);
+}
+
+
+#register_modal .image
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 50%;
+    height: 100%;
+}
+
+
+#register_modal .image img
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+#register_modal .data
+{
+    width: 50%;
+    margin-left: auto;
+    padding: 32px 32px 45px;
+}
+
+
+#register_modal .title
+{
+    font-family: var(--font_family2);
+    font-size: var(--font_size_title);
+    font-weight: 400;
+    line-height: 100%;
+
+    margin-bottom: 48px;
+
+    text-align: center;
+}
+
+
+#register_modal .form
+{
+    width: 453px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    --form_border_color: rgba(38, 2, 2, .60);
+    --form_focus_color: rgba(38, 2, 2, .60);
+    --form_bg_color: var(--light_text_color);
+    --form_placeholder_color: rgba(38, 2, 2, .60);
+}
+
+
+#register_modal .form .line
+{
+    margin-bottom: 20px;
+}
+
+
+#register_modal .form .type
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+#register_modal .form .input
+{
+    color: var(--primary_text_color);
+}
+
+
+#register_modal .form .submit
+{
+    padding-top: 44px;
+}
+
+
+#register_modal .form .submit_btn
+{
+    color: var(--light_text_color);
+    border-color: var(--light_text_color);
+    background: none;
+}
+
+
+#register_modal .form .submit_btn:hover
+{
+    color: var(--primary_text_color);
+    background: var(--light_text_color);
+}
+
+
+#register_modal .or
+{
+    line-height: 120%;
+
+    margin-top: 24px;
+
+    text-align: center;
+    letter-spacing: -.54px;
+}
+
+
+#register_modal .or .btn
+{
+    text-decoration: underline;
+
+    text-decoration-thickness: 1px;
+}
+
+
+#register_modal .tg_btn
+{
+    display: flex;
+
+    margin-top: 16px;
+}
+
+
+#register_modal .tg_btn .btn
+{
+    font-size: var(--font_size_middle);
+    font-weight: 500;
+    line-height: 120%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: 0 auto;
+    padding: 16px;
+
+    letter-spacing: -.4px;
+    text-transform: uppercase;
+
+    background: #479aff;
+
+    gap: 8px;
+}
+
+
+#register_modal .tg_btn .btn .icon
+{
+    display: block;
+
+    width: 24px;
+    height: 24px;
+}
+
+
+
+@media print,
+(max-width: 1439px)
+{
+    #register_modal .data
+    {
+        padding: 40px;
+    }
+
+
+    #register_modal .form .submit
+    {
+        padding-top: 28px;
+    }
+}
+
+
+
+@media print,
+(max-width: 1279px)
+{
+    #register_modal .image
+    {
+        width: 40%;
+    }
+
+
+    #register_modal .data
+    {
+        width: 60%;
+    }
+}
+
+
+
+@media print,
+(max-width: 1023px)
+{
+    #register_modal .image
+    {
+        width: 100%;
+        height: 200px;
+    }
+
+
+    #register_modal .data
+    {
+        width: 100%;
+        padding-top: 240px;
+    }
+}
+
+
+
+@media (max-width: 767px)
+{
+    #register_modal .image
+    {
+        width: 100%;
+        height: 180px;
+    }
+
+
+    #register_modal .data
+    {
+        padding-top: 220px;
+    }
+
+
+    #register_modal .title
+    {
+        margin-bottom: 40px;
+    }
+
+
+    #register_modal .tg_btn .btn
+    {
+        padding: 12px 24px;
+    }
+}
+
+
+
+@media (max-width: 479px)
+{
+    #register_modal .data
+    {
+        padding: 212px 16px 32px;
+    }
+
+
+    #register_modal .title
+    {
+        margin-bottom: 28px;
+    }
+}

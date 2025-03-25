@@ -62,8 +62,6 @@ header .menu
 
     letter-spacing: -.72px;
 
-    color: var(--primary_color);
-
     gap: 80px;
 }
 
@@ -128,7 +126,8 @@ header .links
 }
 
 
-header .links a
+header .links a,
+header .links .btn
 {
     display: block;
 

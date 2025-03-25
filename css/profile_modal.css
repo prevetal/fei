@@ -1,0 +1,368 @@
+/*-------------------
+    Profile modal
+-------------------*/
+#profile_modal
+{
+    width: 1325px;
+    padding: 0;
+
+    color: var(--light_text_color);
+    border: none;
+    background: var(--primary_color);
+}
+
+
+#profile_modal .image
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 50%;
+    height: 100%;
+}
+
+
+#profile_modal .image img
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+#profile_modal .data
+{
+    width: 50%;
+    margin-left: auto;
+    padding: 32px 24px 62px;
+}
+
+
+#profile_modal .title
+{
+    font-family: var(--font_family2);
+    font-size: var(--font_size_title);
+    font-weight: 400;
+    line-height: 100%;
+
+    margin-bottom: 48px;
+
+    text-align: center;
+}
+
+
+#profile_modal .row
+{
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+
+#profile_modal .item
+{
+    width: calc(50% - 48px);
+}
+
+
+#profile_modal .item .checkbox
+{
+    font-size: var(--font_size_middle);
+    line-height: 120%;
+
+    position: relative;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    min-height: 28px;
+    padding-left: 44px;
+
+    cursor: pointer;
+    letter-spacing: -.6px;
+    text-transform: uppercase;
+}
+
+
+#profile_modal .item .checkbox input
+{
+    display: none;
+}
+
+
+#profile_modal .item .checkbox .check
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 28px;
+    height: 28px;
+}
+
+
+#profile_modal .item .checkbox .check svg
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+#profile_modal .item .checkbox .check svg + svg
+{
+    display: none;
+}
+
+
+#profile_modal .item .checkbox input:checked + .check svg
+{
+    display: none;
+}
+
+#profile_modal .item .checkbox input:checked + .check svg + svg
+{
+    display: block;
+}
+
+
+#profile_modal .item ul
+{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 32px;
+
+    gap: 16px;
+}
+
+
+#profile_modal .item ul li
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    padding-left: 28px;
+
+    list-style-type: none;
+}
+
+
+#profile_modal .item ul li:before
+{
+    position: absolute;
+    top: 10px;
+    left: 8px;
+
+    display: block;
+
+    width: 4px;
+    height: 4px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: currentColor;
+}
+
+
+#profile_modal .sep
+{
+    width: 1px;
+
+    background: rgba(255, 255, 255, .40);
+}
+
+
+#profile_modal .btn
+{
+    font-size: var(--font_size_middle);
+    font-weight: 500;
+    line-height: 120%;
+
+    display: block;
+
+    width: 320px;
+    max-width: 100%;
+    margin: 112px auto 0;
+    padding: 15px;
+
+    transition: .2s linear;
+    letter-spacing: -.4px;
+    text-transform: uppercase;
+
+    color: var(--primary_text_color);
+    border: 1px solid var(--primary_text_color);
+    background: var(--light_text_color);
+}
+
+
+#profile_modal .btn:hover
+{
+    color: #fff;
+    background: var(--primary_text_color);
+}
+
+
+
+@media print,
+(max-width: 1439px)
+{
+    #profile_modal .data
+    {
+        padding: 40px;
+    }
+
+
+    #profile_modal .item
+    {
+        width: calc(50% - 32px);
+    }
+
+
+    #profile_modal .item ul
+    {
+        margin-top: 24px;
+    }
+
+
+    #profile_modal .btn
+    {
+        width: 280px;
+        margin-top: 64px;
+    }
+}
+
+
+
+@media print,
+(max-width: 1279px)
+{
+    #profile_modal .image
+    {
+        width: 40%;
+    }
+
+
+    #profile_modal .data
+    {
+        width: 60%;
+    }
+
+
+    #profile_modal .item
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    #profile_modal .btn
+    {
+        width: 240px;
+        margin-top: 48px;
+    }
+}
+
+
+
+@media print,
+(max-width: 1023px)
+{
+    #profile_modal .image
+    {
+        width: 100%;
+        height: 200px;
+    }
+
+
+    #profile_modal .data
+    {
+        width: 100%;
+        padding-top: 240px;
+    }
+}
+
+
+
+@media (max-width: 767px)
+{
+    #profile_modal .image
+    {
+        width: 100%;
+        height: 180px;
+    }
+
+
+    #profile_modal .data
+    {
+        padding-top: 220px;
+    }
+
+
+    #profile_modal .title
+    {
+        margin-bottom: 40px;
+    }
+
+
+    #profile_modal .item
+    {
+        width: 100%;
+    }
+
+
+    #profile_modal .sep
+    {
+        width: 100%;
+        height: 1px;
+        margin: 24px 0;
+    }
+}
+
+
+
+@media (max-width: 479px)
+{
+    #profile_modal .data
+    {
+        padding: 212px 32px 32px;
+    }
+
+
+    #profile_modal .title
+    {
+        margin-bottom: 28px;
+    }
+
+
+    #profile_modal .item ul
+    {
+        margin-top: 20px;
+
+        gap: 12px;
+    }
+
+
+    #profile_modal .item ul li:before
+    {
+        top: 8px;
+    }
+
+
+    #profile_modal .btn
+    {
+        width: 100%;
+        margin-top: 40px;
+        padding: 14px;
+    }
+}

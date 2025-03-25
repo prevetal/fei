@@ -28,6 +28,8 @@
 		<link rel="stylesheet" href="css/variables.css">
 
 		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
 
 		<link rel="stylesheet" href="css/global.css">
 		<link rel="stylesheet" href="css/block_head.css">
@@ -37,6 +39,9 @@
 		<link rel="stylesheet" href="css/fairies.css">
 		<link rel="stylesheet" href="css/filter.css">
 		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/profile_modal.css">
+		<link rel="stylesheet" href="css/register_modal.css">
+		<link rel="stylesheet" href="css/login_modal.css">
 	</head>
 
 	<body>
@@ -71,9 +76,9 @@
 							</div>
 
 							<div class="account">
-								<a href="/">
+								<button class="btn modal_btn" data-modal="profile_modal">
 									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
-								</a>
+								</button>
 							</div>
 						</div>
 					</div>
@@ -1477,10 +1482,194 @@
 		</div>
 
 
+		<section class="modal" id="profile_modal">
+			<div class="image">
+				<img src="images/tmp/modal_img.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="data">
+				<div class="title">Выберите профиль</div>
+
+				<div class="row">
+					<div class="item">
+						<label class="checkbox">
+							<input type="radio" name="type">
+
+							<div class="check">
+								<svg><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+								<svg><use xlink:href="images/sprite.svg#ic_check_a"></use></svg>
+							</div>
+
+							<div>Рекламодатель</div>
+						</label>
+
+						<ul>
+							<li>Большая аудитория</li>
+							<li>Добавление анкет</li>
+							<li>Личный кабинет</li>
+						</ul>
+					</div>
+
+					<div class="sep"></div>
+
+					<div class="item">
+						<label class="checkbox">
+							<input type="radio" name="type">
+
+							<div class="check">
+								<svg><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+								<svg><use xlink:href="images/sprite.svg#ic_check_a"></use></svg>
+							</div>
+
+							<div>Клиент</div>
+						</label>
+
+						<ul>
+							<li>Добавление отзывов</li>
+							<li>Управление избранными</li>
+							<li>Личный кабинет</li>
+						</ul>
+					</div>
+				</div>
+
+				<button class="btn modal_btn" data-modal="register_modal">далее</button>
+			</div>
+		</section>
+
+
+		<section class="modal" id="register_modal">
+			<div class="image">
+				<img src="images/tmp/modal_img.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="data">
+				<div class="title">Регистрация</div>
+
+				<form action="" class="form">
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="Введите свой Ник">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="email" name="" value="" class="input" placeholder="Введите свой e-mail">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="password" name="" value="" class="input" placeholder="Введите пароль">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="password" name="" value="" class="input" placeholder="Повторите пароль">
+						</div>
+					</div>
+
+					<div class="line type">
+						<div class="field">
+							<label class="checkbox">
+								<input type="radio" name="type">
+
+								<div class="check">
+									<svg><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+									<svg><use xlink:href="images/sprite.svg#ic_check_a"></use></svg>
+								</div>
+
+								<div>Клиент</div>
+							</label>
+						</div>
+
+						<div class="field">
+							<label class="checkbox">
+								<input type="radio" name="type" checked>
+
+								<div class="check">
+									<svg><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+									<svg><use xlink:href="images/sprite.svg#ic_check_a"></use></svg>
+								</div>
+
+								<div>Рекламодатель</div>
+							</label>
+						</div>
+					</div>
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">Зарегистрироваться</button>
+					</div>
+
+					<div class="or">
+						Уже зарегистрированы? <button type="button" class="btn modal_btn" data-modal="login_modal">Войти</button>
+					</div>
+
+					<div class="tg_btn">
+						<button type="button" class="btn">
+							<span>ВОЙТИ ЧЕРЕЗ telegram</span>
+
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_tg2"></use></svg>
+						</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<section class="modal" id="login_modal">
+			<div class="image">
+				<img src="images/tmp/modal_img.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="data">
+				<div class="title">Авторизация</div>
+
+				<form action="" class="form">
+					<div class="line">
+						<div class="field">
+							<input type="email" name="" value="" class="input" placeholder="Введите свой логин/e-mail">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="password" name="" value="" class="input" placeholder="Введите пароль">
+						</div>
+					</div>
+
+					<div class="line forgot_pass">
+						<div class="fild">
+							<button class="btn">Забыли пароль?</button>
+						</div>
+					</div>
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">Зарегистрироваться</button>
+					</div>
+
+					<div class="or">
+						Еще нет аккаунта? <button type="button" class="btn modal_btn" data-modal="register_modal">Зарегистрироваться</button>
+					</div>
+
+					<div class="tg_btn">
+						<button type="button" class="btn">
+							<span>ВОЙТИ ЧЕРЕЗ telegram</span>
+
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_tg2"></use></svg>
+						</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
 		<!-- Connecting javascript files -->
 		<script src="js/jquery-3.6.3.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/fancybox.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
 </html>

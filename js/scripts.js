@@ -164,6 +164,76 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		$(this).toggleClass('active').next().slideToggle(300)
 	})
+
+
+	// Fairy info
+	if ($('.fairy_info .images').length) {
+		const fairyThumbs = new Swiper('.fairy_info .thumbs .swiper', {
+			loop: false,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			slidesPerView: 'auto',
+			lazy: true,
+			loopAdditionalSlides: 1,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			direction: 'vertical',
+			breakpoints: {
+				0: {
+					spaceBetween: 12
+				},
+				1280: {
+					spaceBetween: 20
+				},
+				1900: {
+					spaceBetween: 23
+				}
+			}
+		})
+
+		new Swiper('.fairy_info .big .swiper', {
+			loop: false,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			spaceBetween: 24,
+			slidesPerView: 1,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				bulletActiveClass: 'active'
+			},
+			lazy: true,
+			thumbs: {
+				swiper: fairyThumbs
+			}
+		})
+	}
+
+
+	// Fairy phone number
+	$('.fairy_info .get_phone_btn').click(function(e) {
+		e.preventDefault()
+
+		$(this).hide()
+		$('.fairy_info .phone').addClass('show')
+	})
+
+
+	// Fairy reviews
+	$('.fairy_reviews .review .spoler_btn').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+
+		$(this).closest('.review').find('.answer').slideToggle(300)
+	})
 })
 
 

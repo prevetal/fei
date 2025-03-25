@@ -429,6 +429,217 @@ button
 
 
 
+/*------------------
+    Form elements
+------------------*/
+.form
+{
+    --form_border_color: transparent;
+    --form_focus_color: transparent;
+    --form_error_color: red;
+    --form_border_radius: 0;
+    --form_bg_color: rgba(90, 14, 14, .60);
+    --form_placeholder_color: #fff;
+}
+
+
+.form ::-webkit-input-placeholder
+{
+    color: var(--form_placeholder_color);
+}
+
+.form :-moz-placeholder
+{
+    color: var(--form_placeholder_color);
+}
+
+.form ::-moz-placeholder
+{
+    opacity: 1;
+    color: var(--form_placeholder_color);
+}
+
+.form :-ms-input-placeholder
+{
+    color: var(--form_placeholder_color);
+}
+
+
+.form .line
+{
+    margin-bottom: 32px;
+}
+
+
+.form .field
+{
+    position: relative;
+}
+
+
+.form .input
+{
+    font-family: var(--font_family);
+    font-size: var(--font_size);
+
+    display: block;
+
+    width: 100%;
+    height: 60px;
+    padding: 0 15px;
+
+    transition: border-color .2s linear;
+    letter-spacing: -.54px;
+
+    color: var(--text_color);
+    border: 1px solid var(--form_border_color);
+    border-radius: var(--form_border_radius);
+    background: var(--form_bg_color);
+}
+
+.form .input:-webkit-autofill
+{
+    -webkit-box-shadow: inset 0 0 0 50px var(--form_bg_color) !important;
+}
+
+
+.form textarea
+{
+    font-family: var(--font_family);
+    font-size: var(--font_size);
+    line-height: 120%;
+
+    display: block;
+
+    width: 100%;
+    height: 227px;
+    padding: 19px;
+
+    resize: none;
+    transition: border-color .2s linear;
+    letter-spacing: -.32px;
+
+    color: var(--text_color);
+    border: 1px solid var(--form_border_color);
+    border-radius: var(--form_border_radius);
+    background: var(--form_bg_color);
+}
+
+
+.form textarea::-webkit-scrollbar
+{
+    width: 5px;
+    height: 5px;
+}
+
+
+.form .input:focus,
+.form textarea:focus
+{
+    border-color: var(--form_focus_color);
+}
+
+
+.form .error
+{
+    border-color: var(--form_error_color);
+}
+
+
+.form .checkbox
+{
+    line-height: 120%;
+
+    position: relative;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    min-height: 28px;
+    padding-left: 44px;
+
+    cursor: pointer;
+    letter-spacing: -.54px;
+}
+
+
+.form .checkbox input
+{
+    display: none;
+}
+
+
+.form .checkbox .check
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 28px;
+    height: 28px;
+}
+
+
+.form .checkbox .check svg
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.form .checkbox .check svg + svg
+{
+    display: none;
+}
+
+
+.form .checkbox input:checked + .check svg
+{
+    display: none;
+}
+
+.form .checkbox input:checked + .check svg + svg
+{
+    display: block;
+}
+
+
+.form .submit_btn
+{
+    font-size: var(--font_size_middle);
+    font-weight: 500;
+    line-height: 120%;
+
+    display: block;
+
+    width: 262px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 16px 32px;
+
+    transition: .2s linear;
+    letter-spacing: -.4px;
+    text-transform: uppercase;
+
+    color: var(--primary_text_color);
+    border: 1px solid var(--primary_text_color);
+    background: #fff;
+}
+
+
+.form .submit_btn:hover
+{
+    color: #fff;
+    background: var(--primary_text_color);
+}
+
+
+
 /*-----------
     PopUp
 -----------*/
@@ -588,6 +799,32 @@ button
 @media print,
 (max-width: 1439px)
 {
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        width: 48px;
+        height: 48px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .input
+    {
+        height: 52px;
+    }
+
+
+    .form .submit_btn
+    {
+        width: 260px;
+        padding: 15px 31px;
+    }
+
+
+
     /*----------------
         Pagination
     ----------------*/
@@ -629,9 +866,48 @@ button
 
 
 
-@media print,
-(max-width: 479px)
+@media (max-width: 767px)
 {
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 24px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .line
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .form .submit_btn
+    {
+        width: 240px;
+        padding: 12px 24px;
+    }
+}
+
+
+
+@media (max-width: 479px)
+{
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 12px;
+    }
+
+
+
     /*-----------
         PopUp
     -----------*/

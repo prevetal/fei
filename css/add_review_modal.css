@@ -1,0 +1,31 @@
+/*---------------------
+    Add review modal
+---------------------*/
+#add_review_modal
+{
+    width: 522px;
+    padding: 39px 33px 40px 33px;
+
+    color: #fff;
+    border: none;
+    background: var(--primary_color);
+}
+
+
+#add_review_modal .modal_title
+{
+    font-weight: 400;
+
+    text-align: left;
+}
+
+
+
+@media print,
+(max-width: 767px)
+{
+    #add_review_modal
+    {
+        padding: 40px 28px;
+    }
+}
