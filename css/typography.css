@@ -89,6 +89,16 @@
 }
 
 
+.text_block a
+{
+    font-weight: 600;
+
+    color: var(--primary_color);
+
+    text-decoration-thickness: 1px;
+}
+
+
 
 @media print,
 (max-width: 767px)

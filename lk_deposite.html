@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Adapting the page for mobile devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Prohibition of phone number recognition -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Page title -->
+		<title>Заголовок страницы</title>
+
+		<!-- Meta description -->
+		<meta name="description" content="">
+
+		<!-- Meta Keywords -->
+		<meta name="keywords" content="">
+
+		<!-- Changing the color of the mobile browser panel -->
+		<meta name="msapplication-TileColor" content="#611616">
+		<meta name="theme-color" content="#611616">
+
+		<!-- Connecting style files -->
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/variables.css">
+
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+
+		<link rel="stylesheet" href="css/global.css">
+		<link rel="stylesheet" href="css/block_head.css">
+		<link rel="stylesheet" href="css/typography.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/lk.css">
+		<link rel="stylesheet" href="css/lk_deposite.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/profile_modal.css">
+		<link rel="stylesheet" href="css/register_modal.css">
+		<link rel="stylesheet" href="css/login_modal.css">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont row">
+						<a href="/" class="logo">FeiRus</a>
+
+						<nav class="menu">
+							<div><a href="/">Схема метро</a></div>
+
+							<div><a href="/">Районы</a></div>
+
+							<div><a href="/">Интим-карта</a></div>
+						</nav>
+
+						<div class="langs modal_cont">
+							<button class="btn mini_modal_btn" data-modal-id="#langs_modal">
+								<span>Москва</span>
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+							</button>
+
+							<div class="mini_modal" id="langs_modal">
+
+							</div>
+						</div>
+
+						<div class="links">
+							<div class="search">
+								<a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+								</a>
+							</div>
+
+							<div class="favorites">
+								<a class="active">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+								</a>
+							</div>
+
+							<div class="account">
+								<button class="btn modal_btn" data-modal="profile_modal">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="lk_info block">
+					<div class="cont row">
+						<button class="mob_lk_menu_btn">Меню</button>
+
+						<aside>
+							<button class="lk_add_btn">ДОБАВИТЬ АНКЕТУ</button>
+
+							<div class="lk_menu">
+								<div>
+									<button class="spoler_btn">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+
+										<span>Профиль</span>
+
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+									</button>
+
+									<div class="sub">
+										<div><a href="/">Индивидуалки</a></div>
+
+										<div><a href="/">Проститутки Салон</a></div>
+
+										<div><a href="/">Агентства</a></div>
+
+										<div><a href="/">БДСМ</a></div>
+
+										<div><a href="/">Черновики</a></div>
+									</div>
+								</div>
+
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+									<svg class="icon for_active"><use xlink:href="images/sprite.svg#ic_favorite_a"></use></svg>
+
+									<span>Избранное</span>
+								</a></div>
+
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_messages"></use></svg>
+									<svg class="icon for_active"><use xlink:href="images/sprite.svg#ic_messages_a"></use></svg>
+
+									<span>Сообщения</span>
+								</a></div>
+
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_forum"></use></svg>
+									<svg class="icon for_active"><use xlink:href="images/sprite.svg#ic_forum_a"></use></svg>
+
+									<span>Форум</span>
+								</a></div>
+
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_black_list"></use></svg>
+									<svg class="icon for_active"><use xlink:href="images/sprite.svg#ic_black_list_a"></use></svg>
+
+									<span>Черный список</span>
+								</a></div>
+
+								<div class="devider"></div>
+
+								<div><a href="/" class="active">
+									<svg class="icon for_active"><use xlink:href="images/sprite.svg#ic_stats"></use></svg>
+
+									<span>Финансовая статистика</span>
+								</a></div>
+
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_tariffs"></use></svg>
+									<svg class="icon for_active"><use xlink:href="images/sprite.svg#ic_tariffs_a"></use></svg>
+
+									<span>Тарифы</span>
+								</a></div>
+
+								<div class="devider"></div>
+
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_comments"></use></svg>
+									<svg class="icon for_active"><use xlink:href="images/sprite.svg#ic_comments_a"></use></svg>
+
+									<span>Мои комментарии</span>
+								</a></div>
+
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_answers"></use></svg>
+									<svg class="icon for_active"><use xlink:href="images/sprite.svg#ic_answers_a"></use></svg>
+
+									<span>Мои ответы</span>
+								</a></div>
+
+								<div><a href="/">
+									<svg class="icon for_active"><use xlink:href="images/sprite.svg#ic_notification"></use></svg>
+
+									<span>Уведомления</span>
+								</a></div>
+
+								<div class="devider"></div>
+
+								<div><a href="/">
+									<svg class="icon for_active"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+									<span>Выход</span>
+								</a></div>
+							</div>
+						</aside>
+
+
+						<section class="content">
+							<div class="lk_deposite">
+								<div class="block_head big_m">
+									<div class="title primary mob_big">
+										<a href="/">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+											<span>Пополнение баланса</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="data">
+									<div class="message">
+										<p>При пополнение баланса от 5000₽ начисляется бонус 10%</p>
+
+										<p>Если баланс не был пополнен в течении 12 часов, напишите нам сообщение на сайте указав способ оплаты и отправьте подробный чек платежа.</p>
+									</div>
+
+									<div class="section">
+										<div class="title">ВАРИАНТ 1</div>
+
+										<div class="bg">
+											<p class="big"><b>Ваш id пользователя: 24</b></p>
+
+											<p>Рекомендуем пополнять баланс крупными суммами, так для Вас будет удобнее и выгоднее.</p>
+
+											<p>Напишите в телеграм @Platon_wmz. ваш баланс будет пополнен удобным для вас способом, за дополнительную комиссию.</p>
+
+											<p>Сообщите ему сайт, ваш id пользователя, сумму и следуйте инструкции.</p>
+										</div>
+
+										<div class="notice">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+
+											<span>Если баланс при автоматическом пополнении не был пополнен в течении нескольких часов, напишите нам в Телеграме @ru_sites_relax.<br> Отправьте название сайта, способ оплаты и подробный чек платежа в pdf формате</span>
+										</div>
+
+										<div class="link">
+											<a href="/">Перейти к оплате</a>
+										</div>
+									</div>
+
+									<div class="section">
+										<div class="title">ВАРИАНТ 2</div>
+
+										<div class="payment">
+											<div class="desc">
+												<p>Переводите точную сумму которая указана при оплате заявки! Иначе деньги не зачисляться и уйдет время на поиск платежа у провайдера!</p>
+
+												<p>После перевода подождите пока обработается платеж и произойдет автоматический возврат на сайт с зачислением денег.</p>
+											</div>
+
+											<form action="" class="form">
+												<div class="field">
+													<input type="number" name="" value="" class="input" placeholder="Введите сумму">
+												</div>
+
+												<div class="submit">
+													<button type="submit" class="submit_btn">ОПЛАТИТЬ</button>
+												</div>
+											</form>
+										</div>
+									</div>
+
+									<div class="section">
+										<div class="title">Инструкция по работе с webmoney.</div>
+
+										<div class="text_block">
+											<p>1. Вам нужно зарегистрироваться в системе WebMoney. Перейдите на <a href="/" target="_blank" rel="noopener nofollow">официальный сайт</a> и в правом верхнем углу нажмите желтую кнопку Зарегистрироваться или сразу перейдите на <a href="/" target="_blank" rel="noopener nofollow">страницу регистрации</a>.<br> - Вам нужно будет указать номер мобильного телефона и подтвердить его по смс.<br> - Укажите паспортные данные в <a href="/" target="_blank" rel="noopener nofollow">Профиле</a> и дождаться их проверки.</p>
+
+											<p>2. Вы можете пополнить баланс своего wmz кошелька:<br> - Обменяв деньги с карты на официальной бирже webmoney <a href="https://exchanger.money" target="_blank" rel="noopener nofollow">exchanger.money</a> или на бирже <a href="https://bestchange.ru" target="_blank" rel="noopener nofollow">bestchange.ru</a>.</p>
+
+											<p>Следить за балансом кошелька проще всего через сайт <a href="/" target="_blank" rel="noopener nofollow">wallet.web.money</a> или в приложении мобильного телефона <a href="/" target="_blank" rel="noopener nofollow">webmoney</a>.</p>
+										</div>
+									</div>
+
+									<div class="section">
+										<div class="title">Инструкция по работе с криптовалютой Tether TRC20 (USDT)</div>
+
+										<div class="text_block">
+											<p>1. Устанавливаем на свой телефон криптокошелек — <a href="/" target="_blank" rel="noopener nofollow">TrustWallet</a>.</p>
+
+											<p>2. Заходим на сайт BestChange.ru и выбираем направление обмена <a href="/" target="_blank" rel="noopener nofollow">Сбербанк Tether TRC20</a> или<br> <a href="/" target="_blank" rel="noopener nofollow">Карта Мир => Tether TRC20</a> и тд.</p>
+
+											<p>3. Также для перевода USDT вам необходимо купить TRON (TRX) (сумма не большая, буквально за 1000р и хватит на долго, TRON используется как комиссия сети за перевод USDT) <a href="/" target="_blank" rel="noopener nofollow">Сбербанк => TRON</a> или<br> <a href="/" target="_blank" rel="noopener nofollow">Карта Мир => TRON</a> и тд.</p>
+
+											<p>4. Выбираем обменник с самым выгодным курсом обмена и совершаем обмен на ваш кошелек.</p>
+
+											<p>5. На сайте <a href="https://skydigital.agency" target="_blank" rel="noopener nofollow">skydigital.agency</a> где происходит пополнение вашего баланса, выбираете оплату Вариант 3: Криптовалюта, там выбираете Tether USDT TRC20 и оплачиваете сумму указанную на странице заявки. Удобнее оплачивать просканиров qr код в вашем приложении TrustWallet.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="cont">
+					<div class="row">
+						<div class="logo">FeiRus</div>
+
+						<div class="image">
+							<img src="images/tmp/footer_img.jpg" alt="" loading="lazy">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="text">Сайт предназначен только для лиц старше 18 лет! Администрация не несёт ответственности за размещённую пользователями информацию.</div>
+
+						<div class="email">
+							<a href="mailto:info@feirus.com">info@feirus.com</a>
+						</div>
+
+						<div class="copyright">&copy; 2024 - FEIRUS</div>
+					</div>
+				</div>
+			</footer>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<section class="modal" id="profile_modal">
+			<div class="image">
+				<img src="images/tmp/modal_img.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="data">
+				<div class="title">Выберите профиль</div>
+
+				<div class="row">
+					<div class="item">
+						<label class="checkbox">
+							<input type="radio" name="type">
+
+							<div class="check">
+								<svg><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+								<svg><use xlink:href="images/sprite.svg#ic_check_a"></use></svg>
+							</div>
+
+							<div>Рекламодатель</div>
+						</label>
+
+						<ul>
+							<li>Большая аудитория</li>
+							<li>Добавление анкет</li>
+							<li>Личный кабинет</li>
+						</ul>
+					</div>
+
+					<div class="sep"></div>
+
+					<div class="item">
+						<label class="checkbox">
+							<input type="radio" name="type">
+
+							<div class="check">
+								<svg><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+								<svg><use xlink:href="images/sprite.svg#ic_check_a"></use></svg>
+							</div>
+
+							<div>Клиент</div>
+						</label>
+
+						<ul>
+							<li>Добавление отзывов</li>
+							<li>Управление избранными</li>
+							<li>Личный кабинет</li>
+						</ul>
+					</div>
+				</div>
+
+				<button class="btn modal_btn" data-modal="register_modal">далее</button>
+			</div>
+		</section>
+
+
+		<section class="modal" id="register_modal">
+			<div class="image">
+				<img src="images/tmp/modal_img.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="data">
+				<div class="title">Регистрация</div>
+
+				<form action="" class="form">
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="Введите свой Ник">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="email" name="" value="" class="input" placeholder="Введите свой e-mail">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="password" name="" value="" class="input" placeholder="Введите пароль">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="password" name="" value="" class="input" placeholder="Повторите пароль">
+						</div>
+					</div>
+
+					<div class="line type">
+						<div class="field">
+							<label class="checkbox">
+								<input type="radio" name="type">
+
+								<div class="check">
+									<svg><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+									<svg><use xlink:href="images/sprite.svg#ic_check_a"></use></svg>
+								</div>
+
+								<div>Клиент</div>
+							</label>
+						</div>
+
+						<div class="field">
+							<label class="checkbox">
+								<input type="radio" name="type" checked>
+
+								<div class="check">
+									<svg><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+									<svg><use xlink:href="images/sprite.svg#ic_check_a"></use></svg>
+								</div>
+
+								<div>Рекламодатель</div>
+							</label>
+						</div>
+					</div>
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">Зарегистрироваться</button>
+					</div>
+
+					<div class="or">
+						Уже зарегистрированы? <button type="button" class="btn modal_btn" data-modal="login_modal">Войти</button>
+					</div>
+
+					<div class="tg_btn">
+						<button type="button" class="btn">
+							<span>ВОЙТИ ЧЕРЕЗ telegram</span>
+
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_tg2"></use></svg>
+						</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<section class="modal" id="login_modal">
+			<div class="image">
+				<img src="images/tmp/modal_img.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="data">
+				<div class="title">Авторизация</div>
+
+				<form action="" class="form">
+					<div class="line">
+						<div class="field">
+							<input type="email" name="" value="" class="input" placeholder="Введите свой логин/e-mail">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="password" name="" value="" class="input" placeholder="Введите пароль">
+						</div>
+					</div>
+
+					<div class="line forgot_pass">
+						<div class="fild">
+							<button class="btn">Забыли пароль?</button>
+						</div>
+					</div>
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">Зарегистрироваться</button>
+					</div>
+
+					<div class="or">
+						Еще нет аккаунта? <button type="button" class="btn modal_btn" data-modal="register_modal">Зарегистрироваться</button>
+					</div>
+
+					<div class="tg_btn">
+						<button type="button" class="btn">
+							<span>ВОЙТИ ЧЕРЕЗ telegram</span>
+
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_tg2"></use></svg>
+						</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<section class="modal" id="add_review_modal">
+			<div class="modal_title">ВАШ ОТЗЫВ</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<textarea name="" placeholder="Текст отзыва"></textarea>
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">ОТПРАВИТЬ</button>
+				</div>
+			</form>
+		</section>
+
+
+		<!-- Connecting javascript files -->
+		<script src="js/jquery-3.6.3.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
