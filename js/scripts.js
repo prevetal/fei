@@ -303,6 +303,16 @@ document.addEventListener('DOMContentLoaded', function() {
 		parent.find('.btns.hide, .btns.show').toggleClass('hide show')
 		parent.find('.features').toggleClass('show')
 	})
+
+
+	// Select file
+	const fileInputs = document.querySelectorAll('form input[type=file]')
+
+	if (fileInputs) {
+		fileInputs.forEach(el => {
+			el.addEventListener('change', () => el.closest('.file').querySelector('label span').innerText = el.value)
+		})
+	}
 })
 
 

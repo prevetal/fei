@@ -1,0 +1,349 @@
+/*----------------
+    LK profile
+----------------*/
+.lk_profile .form
+{
+    width: 436px;
+    max-width: 100%;
+
+    --form_border_radius: 12px;
+    --form_bg_color: rgba(148, 148, 148, .20);
+    --form_placeholder_color: rgba(38, 2, 2, .60);
+}
+
+
+.lk_profile .form .line
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-bottom: 40px;
+}
+
+
+.lk_profile .form .label
+{
+    line-height: 120%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    width: 75px;
+    min-height: 44px;
+    margin: 0;
+    padding-right: 10px;
+
+    letter-spacing: -.54px;
+
+    color: var(--primary_text_color);
+}
+
+
+.lk_profile .form .field
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    width: calc(100% - 75px);
+    margin-left: auto;
+
+    gap: 12px;
+}
+
+
+.lk_profile .form .input
+{
+    width: 100%;
+    height: 44px;
+    padding: 0 31px;
+}
+
+
+.lk_profile .form .input.small
+{
+    width: calc(100% - 118px);
+}
+
+
+.lk_profile .form textarea
+{
+    width: 100%;
+    height: 153px;
+    padding: 11px 31px;
+}
+
+
+.lk_profile .form .unit
+{
+    line-height: 120%;
+
+    letter-spacing: -.54px;
+
+    color: rgba(38, 2, 2, .40);
+}
+
+
+.lk_profile .form select
+{
+    display: none;
+}
+
+
+.lk_profile .form .nice-select
+{
+    position: relative;
+
+    width: 100%;
+
+    cursor: pointer;
+}
+
+
+.lk_profile .form .nice-select .current
+{
+    line-height: 120%;
+
+    display: flex;
+    overflow: hidden;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    height: 44px;
+    padding: 0 31px;
+
+    cursor: pointer;
+    transition: border-color .2s linear;
+    white-space: nowrap;
+    letter-spacing: -.54px;
+    text-overflow: ellipsis;
+
+    color: var(--form_placeholder_color);
+    border: 1px solid var(--primary_color);
+    border-radius: 12px;
+}
+
+
+.lk_profile .form .nice-select-dropdown
+{
+    position: absolute;
+    z-index: 9;
+    top: 100%;
+    left: 0;
+
+    visibility: hidden;
+    overflow: hidden;
+
+    width: 100%;
+    margin-top: 1px;
+    padding: 7px 7px 7px 0;
+
+    transition: .2s linear;
+    transform: none;
+
+    opacity: 0;
+    border: 1px solid var(--primary_color);
+    border-radius: 12px;
+    background: var(--bg);
+}
+
+.lk_profile .form .nice-select.open .nice-select-dropdown
+{
+    visibility: visible;
+
+    transform: none;
+
+    opacity: 1;
+}
+
+
+.lk_profile .form .nice-select .list
+{
+    overflow: auto;
+
+    max-height: 228px;
+
+    overscroll-behavior-y: contain;
+}
+
+
+.lk_profile .form .nice-select .list::-webkit-scrollbar
+{
+    width: 3px;
+    height: 3px;
+
+    border-radius: 20px;
+    background-color: rgba(97, 22, 22, .08);
+}
+
+
+.lk_profile .form .nice-select .list::-webkit-scrollbar-thumb
+{
+    border-radius: 20px;
+    background-color: rgba(97, 22, 22, .16);
+}
+
+
+.lk_profile .form .nice-select .list .option
+{
+    font-weight: inherit;
+    line-height: normal;
+
+    display: block;
+
+    padding: 8px 31px;
+
+    list-style-type: none;
+
+    cursor: pointer;
+    transition: color .2s linear;
+    white-space: nowrap;
+
+    background: none;
+}
+
+
+.lk_profile .form .nice-select .list .option:empty
+{
+    display: none;
+}
+
+
+.lk_profile .form .arr
+{
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    right: 16px;
+    bottom: 0;
+
+    display: block;
+
+    width: 28px;
+    height: 28px;
+    margin: auto 0;
+
+    pointer-events: none;
+
+    color: var(--primary_color);
+}
+
+
+.lk_profile .form .tg_btn .btn
+{
+    font-size: var(--font_size_middle);
+    font-weight: 500;
+    line-height: 120%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    min-width: 280px;
+    max-width: 100%;
+    min-height: 48px;
+    padding: 12px;
+
+    letter-spacing: -.4px;
+    text-transform: uppercase;
+
+    color: var(--light_text_color);
+    background: #479aff;
+
+    gap: 8px;
+}
+
+
+.lk_profile .form .tg_btn .btn .icon
+{
+    display: block;
+
+    width: 24px;
+    height: 24px;
+}
+
+
+.lk_profile .form .avatar label
+{
+    line-height: 120%;
+
+    display: flex;
+    overflow: hidden;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    height: 44px;
+
+    cursor: pointer;
+    white-space: nowrap;
+    text-decoration: underline;
+    letter-spacing: -.54px;
+    text-overflow: ellipsis;
+
+    color: rgba(38, 2, 2, .40);
+
+    text-decoration-thickness: 1px;
+}
+
+
+.lk_profile .form .avatar input
+{
+    display: none;
+}
+
+
+.lk_profile .form .submit_btn
+{
+    font-size: var(--font_size_middle);
+    font-weight: 500;
+    line-height: 120%;
+
+    width: 316px;
+    max-width: 100%;
+    margin: 0;
+    padding: 12px;
+
+    letter-spacing: -.4px;
+    text-transform: uppercase;
+
+    color: var(--light_text_color);
+    border-color: var(--primary_color);
+    background: var(--primary_color);
+}
+
+.lk_profile .form .submit_btn:hover
+{
+    border-color: var(--primary_text_color);
+    background: var(--primary_text_color);
+}
+
+
+
+@media (max-width: 479px)
+{
+    .lk_profile .form .input.small
+    {
+        width: calc(100% - 48px);
+    }
+
+
+    .lk_profile .form .submit_btn
+    {
+        width: 100%;
+        height: 50px;
+    }
+}
