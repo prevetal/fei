@@ -1,0 +1,173 @@
+/*---------
+    Map
+---------*/
+.map_info
+{
+    padding-top: 87px;
+}
+
+
+.map_info #map
+{
+    position: relative;
+
+    overflow: hidden;
+
+    height: 736px;
+
+    border-radius: 10px;
+    background: #ddd;
+}
+
+
+.map_info [class*='-balloon']
+{
+    box-shadow: none;
+}
+
+
+.map_info [class*='-balloon__layout']
+{
+    background: var(--primary_color);
+}
+
+
+.map_info [class*='-balloon__close'],
+.map_info [class*='-balloon__tail']
+{
+    display: none;
+}
+
+
+.map_info [class*='-balloon__content']
+{
+    font-family: var(--font_family);
+    font-size: var(--font_size);
+    line-height: normal;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: var(--primary_color);
+}
+
+
+.map_info .item
+{
+    display: block;
+
+    width: 307px;
+    max-width: 100%;
+    padding: 20px;
+
+    text-decoration: none;
+
+    color: var(--light_text_color);
+    background: var(--primary_color);
+}
+
+
+.map_info .item .thumb
+{
+    position: relative;
+
+    display: block;
+
+    margin-bottom: 16px;
+    padding-bottom: 84.951%;
+
+    text-decoration: none;
+
+    color: currentColor;
+    background: #ddd;
+}
+
+
+.map_info .item .thumb img
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.map_info .item .name
+{
+    font-family: var(--font_family2);
+    font-size: calc(var(--font_size_title_small) - 4px);
+    font-weight: 400;
+    line-height: 100%;
+}
+
+
+.map_info .item .tags
+{
+    line-height: 120%;
+
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-top: 4px;
+
+    letter-spacing: -.36px;
+
+    gap: 10px;
+}
+
+
+.map_info .item .tags .sep
+{
+    width: 1px;
+
+    background: currentColor;
+}
+
+
+.map_info .item .price
+{
+    font-weight: 500;
+    line-height: 120%;
+
+    margin-top: 12px;
+
+    letter-spacing: -.36px;
+}
+
+
+
+@media print,
+(max-width: 1439px)
+{
+    .map_info
+    {
+        padding-top: 48px;
+    }
+
+
+    .map_info #map
+    {
+        height: 640px;
+    }
+}
+
+
+
+@media print,
+(max-width: 1279px)
+{
+    .map_info
+    {
+        padding-top: 40px;
+    }
+}

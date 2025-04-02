@@ -234,6 +234,75 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		$(this).closest('.review').find('.answer').slideToggle(300)
 	})
+
+
+	// LK - Menu
+	$('.mob_lk_menu_btn').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+
+		$('.lk_info aside').slideToggle(300)
+	})
+
+
+	$('.lk_menu .spoler_btn').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+
+		$(this).next().slideToggle(300)
+	})
+
+
+	// LK - Messages
+	$('.lk_messages .item .spoler_btn').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+
+		$(this).closest('.item').toggleClass('open')
+	})
+
+
+	// LK - Send message
+	$('.lk_send_message .send_message_btn').click(function(e) {
+		e.preventDefault()
+
+		$('.lk_send_message .form').fadeIn(300)
+
+		document.querySelector('.lk_send_message .form').scrollIntoView({
+			behavior: 'smooth',
+			block: 'start'
+		}, 1000)
+	})
+
+
+	// Custom select - Nice select
+	const selects = document.querySelectorAll('select:not(.skip)')
+
+	if (selects) {
+		selects.forEach(el => {
+			NiceSelect.bind(el, {
+				placeholder: el.getAttribute('data-placeholder')
+			})
+
+			el.addEventListener('change', () => el.classList.add('selected'))
+		})
+	}
+
+
+	// LK - Fairies
+	$('.lk_fairies .item .spoler_btn').click(function(e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.item')
+
+		$(this).toggleClass('active')
+
+		parent.find('.btns.hide, .btns.show').toggleClass('hide show')
+		parent.find('.features').toggleClass('show')
+	})
 })
 
 
@@ -266,3 +335,53 @@ window.addEventListener('resize', function () {
 		}
 	}
 })
+
+
+
+// Map
+function initMap() {
+	ymaps.ready(() => {
+		let myMap = new ymaps.Map('map', {
+			center: [55.755864, 37.617698],
+			zoom: 16,
+			controls: []
+		})
+
+		// Placemark
+		let myPlacemark = new ymaps.Placemark([55.755864, 37.617698], {
+			balloonContent:
+				String() + '<a href="/" class="item">'
+							+ '<div class="thumb">'
+								+ '<img src="images/tmp/fairies_thumb3.jpg" alt="" loading="lazy">'
+							+ '</div>'
+
+							+ '<div class="name">Вика, 23</div>'
+
+							+ '<div class="tags">'
+								+ '<div>Инди</div>'
+								+ '<div class="sep"></div>'
+								+ '<div>Проверено</div>'
+								+ '<div class="sep"></div>'
+								+ '<div>С видео</div>'
+							+ '</div>'
+
+							+ '<div class="price">Ростокино, 10 000 ₽</div>'
+						+ '</a>'
+		}, {
+			hideIconOnBalloonOpen : false,
+			balloonShadow : false,
+			balloonOffset : [-95, -32]
+		})
+
+		myMap.geoObjects.add(myPlacemark)
+
+		// myMap.controls.add('zoomControl', {
+		// 	position : {
+		// 		right : '20px',
+		// 		top   : '20px'
+		// 	}
+		// })
+
+		myMap.behaviors.disable('scrollZoom')
+	})
+}

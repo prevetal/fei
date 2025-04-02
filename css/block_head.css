@@ -6,6 +6,11 @@
     margin-bottom: 40px;
 }
 
+.block_head.big_m
+{
+    margin-bottom: 60px;
+}
+
 
 .block_head .title
 {
@@ -18,6 +23,12 @@
 }
 
 
+.block_head .title.primary
+{
+    color: var(--primary_color);
+}
+
+
 
 @media print,
 (max-width: 1279px)
@@ -25,6 +36,12 @@
     .block_head
     {
         margin-bottom: 28px;
+    }
+
+
+    .block_head.big_m
+    {
+        margin-bottom: 40px;
     }
 }
 
@@ -36,5 +53,11 @@
     .block_head
     {
         margin-bottom: 24px;
+    }
+
+
+    .block_head .title.mob_big
+    {
+        font-size: var(--font_size_title_big);
     }
 }

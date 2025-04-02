@@ -1,0 +1,301 @@
+/*----------------------
+    LK notifications
+----------------------*/
+.lk_notifications .head .desc
+{
+    font-weight: 500;
+    line-height: 120%;
+
+    letter-spacing: -.36px;
+
+    color: var(--primary_text_color);
+}
+
+
+.lk_notifications .tg_btn
+{
+    display: flex;
+
+    margin-top: 20px;
+}
+
+
+.lk_notifications .tg_btn .btn
+{
+    font-size: var(--font_size_middle);
+    font-weight: 500;
+    line-height: 120%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    min-width: 280px;
+    min-height: 48px;
+    padding: 12px;
+
+    letter-spacing: -.4px;
+    text-transform: uppercase;
+
+    color: var(--light_text_color);
+    background: #479aff;
+
+    gap: 8px;
+}
+
+
+.lk_notifications .tg_btn .btn .icon
+{
+    display: block;
+
+    width: 24px;
+    height: 24px;
+}
+
+
+
+.lk_notifications .data
+{
+    width: 831px;
+    max-width: 100%;
+    margin-top: 67px;
+}
+
+
+.lk_notifications .titles
+{
+    font-weight: 500;
+    line-height: 120%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    margin-bottom: 27px;
+
+    text-align: center;
+    letter-spacing: -.36px;
+
+    color: var(--primary_text_color);
+
+    gap: 110px;
+}
+
+
+.lk_notifications .items
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 38px;
+}
+
+
+.lk_notifications .items > *
+{
+    line-height: 120%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    letter-spacing: -.54px;
+
+    color: var(--primary_text_color);
+
+    gap: 110px;
+}
+
+
+.lk_notifications .items .toggle
+{
+    display: block;
+
+    width: 56px;
+    margin: 0 auto;
+
+    cursor: pointer;
+}
+
+
+.lk_notifications .items .toggle input
+{
+    display: none;
+}
+
+
+.lk_notifications .items .toggle > div
+{
+    position: relative;
+
+    height: 28px;
+
+    transition: border-color .2s linear;
+
+    border: 1px solid rgba(17, 3, 3, .20);
+    border-radius: 28px;
+}
+
+
+.lk_notifications .items .toggle .ball
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1px;
+
+    width: 24px;
+    height: 24px;
+    margin: auto 0;
+
+    transition: .2s linear;
+
+    border-radius: 50%;
+    background: rgba(17, 3, 3, .20);
+}
+
+
+.lk_notifications .items .toggle input:checked + div
+{
+    border-color: var(--primary_color);
+}
+
+.lk_notifications .items .toggle input:checked + div .ball
+{
+    left: 28px;
+
+    background: var(--primary_color);
+}
+
+
+.lk_notifications .items .mob_label
+{
+    display: none;
+}
+
+
+.lk_notifications .col_name
+{
+    width: 100%;
+}
+
+.lk_notifications .col_tg
+{
+    width: 76px;
+    min-width: 76px;
+}
+
+.lk_notifications .col_email
+{
+    width: 56px;
+    min-width: 56px;
+}
+
+
+
+@media print,
+(max-width: 1439px)
+{
+    .lk_notifications .data
+    {
+        width: 832px;
+        margin-top: 60px;
+    }
+
+
+    .lk_notifications .items
+    {
+        gap: 32px;
+    }
+}
+
+
+
+@media print,
+(max-width: 1279px)
+{
+    .lk_notifications .titles,
+    .lk_notifications .items > *
+    {
+        gap: 80px;
+    }
+}
+
+
+
+@media (max-width: 767px)
+{
+    .lk_notifications .data
+    {
+        margin-top: 58px;
+    }
+
+
+    .lk_notifications .items
+    {
+        gap: 28px;
+    }
+
+
+    .lk_notifications .titles,
+    .lk_notifications .items > *
+    {
+        gap: 40px;
+    }
+}
+
+
+
+@media (max-width: 479px)
+{
+    .lk_notifications .titles
+    {
+        display: none;
+    }
+
+
+    .lk_notifications .items
+    {
+        gap: 24px;
+    }
+
+
+    .lk_notifications .items > *
+    {
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        gap: 16px;
+    }
+
+
+    .lk_notifications .items .toggle
+    {
+        margin: 0 0 0 auto;
+    }
+
+
+    .lk_notifications .items .mob_label
+    {
+        display: block;
+    }
+
+
+    .lk_notifications .col_tg,
+    .lk_notifications .col_email
+    {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        width: 100%;
+    }
+}

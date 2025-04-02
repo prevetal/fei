@@ -1,0 +1,363 @@
+/*-------------------
+    LK fin. stats
+-------------------*/
+.lk_fin_stats .head
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-bottom: 40px;
+}
+
+
+.lk_fin_stats .tabs
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    gap: 32px;
+}
+
+
+.lk_fin_stats .tabs .btn
+{
+    font-size: var(--font_size_middle);
+    font-weight: 500;
+    line-height: 120%;
+
+    padding: 7px 23px;
+
+    transition: .2s linear;
+    letter-spacing: -.6px;
+
+    color: var(--primary_color);
+    border: 1px solid var(--primary_color);
+    border-radius: 24px;
+}
+
+
+.lk_fin_stats .tabs .btn:hover,
+.lk_fin_stats .tabs .btn.active
+{
+    color: var(--light_text_color);
+    background: var(--primary_color);
+}
+
+
+.lk_fin_stats .balance
+{
+    font-size: var(--font_size_middle);
+    font-weight: 500;
+    line-height: 120%;
+
+    letter-spacing: -.6px;
+
+    color: var(--primary_text_color);
+}
+
+
+.lk_fin_stats .deposite_btn
+{
+    font-size: var(--font_size_middle);
+    font-weight: 500;
+    line-height: 120%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 40.417%;
+    padding: 15px;
+
+    transition: .2s linear;
+    text-decoration: none;
+    letter-spacing: -.4px;
+    text-transform: uppercase;
+
+    color: var(--primary_text_color);
+    border: 1px solid var(--primary_text_color);
+}
+
+
+.lk_fin_stats .deposite_btn:hover
+{
+    color: var(--light_text_color);
+    background: var(--primary_text_color);
+}
+
+
+
+.lk_fin_stats .filter
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-bottom: 40px;
+
+    --form_border_color: rgba(38, 2, 2, .60);
+    --form_focus_color: rgba(38, 2, 2, .60);
+    --form_bg_color: none;
+    --form_placeholder_color: rgba(38, 2, 2, .60);
+}
+
+
+.lk_fin_stats .filter .line
+{
+    margin-bottom: 0;
+}
+
+
+.lk_fin_stats .filter .label
+{
+    font-size: var(--font_size_middle);
+    line-height: 120%;
+
+    letter-spacing: -.6px;
+
+    color: var(--primary_text_color);
+}
+
+
+.lk_fin_stats .filter .period
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    gap: 39px;
+}
+
+
+.lk_fin_stats .filter .period .field
+{
+    width: 180px;
+    max-width: 100%;
+}
+
+
+.lk_fin_stats .filter .period .icon
+{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 16px;
+    bottom: 0;
+
+    display: block;
+
+    width: 28px;
+    height: 28px;
+    margin: auto 0;
+
+    pointer-events: none;
+
+    opacity: .4;
+}
+
+
+.lk_fin_stats .filter .input
+{
+    height: 48px;
+    padding: 0 15px;
+}
+
+
+.lk_fin_stats .filter .input_date
+{
+    padding-right: 47;
+}
+
+
+.lk_fin_stats .filter .submit
+{
+    margin-left: 66px;
+}
+
+
+.lk_fin_stats .filter .submit_btn
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    width: auto;
+    margin: 0;
+    padding: 0;
+
+    border: none;
+
+    gap: 28px;
+}
+
+
+.lk_fin_stats .filter .submit_btn .icon
+{
+    display: block;
+
+    width: 28px;
+    height: 28px;
+}
+
+
+.lk_fin_stats .filter .submit_btn:hover
+{
+    color: currentColor;
+    background: none;
+}
+
+
+
+.lk_fin_stats table
+{
+    width: 100%;
+
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+.lk_fin_stats table th
+{
+    font-size: var(--font_size_middle);
+    font-weight: 600;
+    line-height: 120%;
+
+    padding: 0 32px;
+    padding-bottom: 15px;
+
+    text-align: left;
+    vertical-align: middle;
+    letter-spacing: -.4px;
+
+    color: var(--primary_text_color);
+    border-bottom: 1px solid;
+}
+
+
+.lk_fin_stats table th:last-child
+{
+    text-align: right;
+}
+
+
+.lk_fin_stats table td
+{
+    line-height: 120%;
+
+    padding: 15px 32px;
+
+    text-align: left;
+    vertical-align: middle;
+    letter-spacing: -.6px;
+
+    color: rgba(38, 2, 2, .60);
+    border-bottom: 1px solid rgba(17, 3, 3, .20);
+}
+
+
+.lk_fin_stats table td:last-child
+{
+    text-align: right;
+}
+
+
+
+@media print,
+(max-width: 1439px)
+{
+    .lk_fin_stats .filter .period
+    {
+        gap: 32px;
+    }
+
+
+    .lk_fin_stats .filter .submit
+    {
+        margin-left: 60px;
+    }
+}
+
+
+
+@media print,
+(max-width: 1279px)
+{
+    .lk_fin_stats .deposite_btn
+    {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+
+    .lk_fin_stats .filter .submit
+    {
+        width: 100%;
+        margin-top: 16px;
+        margin-left: 0;
+    }
+}
+
+
+
+@media print,
+(max-width: 767px)
+{
+    .lk_fin_stats .head
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .lk_fin_stats .filter
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .lk_fin_stats .filter .label
+    {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+
+    .lk_fin_stats .filter .period
+    {
+        justify-content: space-between;
+
+        gap: 0;
+    }
+
+
+    .lk_fin_stats .filter .period .field
+    {
+        width: calc(50% - 4px);
+    }
+}
+
+
+
+@media print,
+(max-width: 479px)
+{
+    .lk_fin_stats .balance
+    {
+        width: 100%;
+        margin-top: 16px;
+    }
+}

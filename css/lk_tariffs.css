@@ -1,0 +1,115 @@
+/*------------------
+    LK tariffs
+------------------*/
+.lk_tariffs .data
+{
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 32px;
+
+    color: var(--light_text_color);
+    background: var(--primary_color);
+}
+
+
+.lk_tariffs .data .col
+{
+    width: calc(50% - 28px);
+}
+
+
+.lk_tariffs .data .sep
+{
+    width: 1px;
+
+    background: rgba(148, 148, 148, .20);
+}
+
+
+.lk_tariffs .data .title
+{
+    font-size: var(--font_size_middle);
+    font-weight: 400;
+    line-height: 120%;
+
+    margin-bottom: 32px;
+
+    letter-spacing: -.6px;
+    text-transform: uppercase;
+}
+
+
+.lk_tariffs .data .features
+{
+    font-size: var(--font_size_middle);
+    line-height: 120%;
+
+    display: flex;
+    flex-direction: column;
+
+    letter-spacing: -.6px;
+
+    gap: 32px;
+}
+
+
+.lk_tariffs .data .features > *
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.lk_tariffs .data .features.label
+{
+    font-weight: 600;
+}
+
+
+.lk_tariffs .data .desc
+{
+    margin-top: 32px;
+}
+
+
+
+.lk_tariffs .description
+{
+    width: 710px;
+    max-width: 100%;
+    margin-top: 60px;
+}
+
+
+
+@media print,
+(max-width: 1439px)
+{
+    .lk_tariffs .data
+    {
+        display: flex;
+        flex-direction: column;
+
+        gap: 28px;
+    }
+
+
+    .lk_tariffs .data .col
+    {
+        width: 100%;
+    }
+
+
+    .lk_tariffs .data .sep
+    {
+        width: 100%;
+        height: 1px;
+    }
+}

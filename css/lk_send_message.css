@@ -1,0 +1,494 @@
+/*---------------------
+    LK send message
+---------------------*/
+.lk_send_message .block_head .title
+{
+    display: flex;
+}
+
+
+.lk_send_message .block_head .title a
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    text-decoration: none;
+
+    color: currentColor;
+
+    gap: 16px;
+}
+
+
+.lk_send_message .block_head .title a .icon
+{
+    display: block;
+
+    width: 36px;
+    height: 36px;
+}
+
+
+.lk_send_message .block_head .title a  span
+{
+    width: calc(100% - 52px);
+}
+
+
+
+.lk_send_message .head
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.lk_send_message .head .subject
+{
+    font-weight: 500;
+    line-height: 120%;
+
+    letter-spacing: -.36px;
+
+    color: var(--primary_text_color);
+}
+
+
+.lk_send_message .head .send_message_btn
+{
+    font-size: var(--font_size_middle);
+    font-weight: 500;
+    line-height: 120%;
+
+    display: block;
+
+    margin-left: auto;
+    padding: 12px 32px;
+
+    letter-spacing: -.4px;
+    text-transform: uppercase;
+
+    color: var(--light_text_color);
+    background: var(--primary_color);
+}
+
+
+
+.lk_send_message .message
+{
+    margin-top: 55px;
+}
+
+
+.lk_send_message .message .label
+{
+    font-weight: 500;
+    line-height: 120%;
+
+    margin-bottom: 27px;
+
+    letter-spacing: -.36px;
+
+    color: var(--primary_text_color);
+}
+
+
+.lk_send_message .message .label u
+{
+    font-size: calc(var(--font_size) - 2px);
+    font-weight: 600;
+
+    text-decoration: underline;
+    letter-spacing: -.32px;
+
+    color: var(--primary_color);
+
+    text-decoration-thickness: 1px;
+}
+
+
+.lk_send_message .message .field
+{
+    font-weight: 500;
+    line-height: 120%;
+
+    min-height: 72px;
+    padding: 12px;
+
+    letter-spacing: -.36px;
+
+    color: var(--primary_text_color);
+    border-radius: 12px;
+    background: rgba(148, 148, 148, .20);
+}
+
+
+.lk_send_message .message .btns
+{
+    font-weight: 500;
+    line-height: 120%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    margin-top: 15px;
+
+    letter-spacing: -.36px;
+
+    color: var(--primary_text_color);
+
+    gap: 8px 56px;
+}
+
+
+.lk_send_message .message .btns .btn
+{
+    transition: color .2s linear;
+}
+
+
+.lk_send_message .message .btns .btn:hover
+{
+    color: var(--primary_color);
+}
+
+
+
+.lk_send_message .answer
+{
+    margin-top: 25px;
+}
+
+
+.lk_send_message .answer .label
+{
+    font-weight: 500;
+    line-height: 120%;
+
+    margin-bottom: 27px;
+
+    letter-spacing: -.36px;
+
+    color: var(--primary_text_color);
+}
+
+
+.lk_send_message .answer .label u
+{
+    font-size: calc(var(--font_size) - 2px);
+    font-weight: 600;
+
+    text-decoration: underline;
+    letter-spacing: -.32px;
+
+    color: var(--primary_color);
+
+    text-decoration-thickness: 1px;
+}
+
+
+.lk_send_message .answer .field
+{
+    font-weight: 500;
+    line-height: 120%;
+
+    min-height: 72px;
+    padding: 12px;
+
+    letter-spacing: -.36px;
+
+    color: var(--primary_text_color);
+    border-radius: 12px;
+    background: rgba(148, 148, 148, .20);
+}
+
+
+.lk_send_message .answer .images
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-top: 10px;
+
+    gap: 10px;
+}
+
+
+.lk_send_message .answer .images a
+{
+    display: block;
+
+    text-decoration: none;
+
+    color: currentColor;
+}
+
+
+.lk_send_message .answer .images img
+{
+    display: block;
+
+    width: 103px;
+    max-width: 100%;
+}
+
+
+.lk_send_message .answer .btns
+{
+    font-weight: 500;
+    line-height: 120%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    margin-top: 15px;
+
+    letter-spacing: -.36px;
+
+    color: var(--primary_text_color);
+
+    gap: 8px 56px;
+}
+
+
+.lk_send_message .answer .btns.hide
+{
+    display: none;
+}
+
+
+.lk_send_message .answer .btns .btn
+{
+    transition: color .2s linear;
+}
+
+
+.lk_send_message .answer .btns .btn:hover
+{
+    color: var(--primary_color);
+}
+
+
+
+.lk_send_message .form
+{
+    display: none;
+
+    margin-top: 105px;
+
+    --form_border_color: #444143;
+    --form_focus_color: #444143;
+    --form_border_radius: 10px;
+    --form_bg_color: none;
+    --form_placeholder_color: #444143;
+}
+
+
+.lk_send_message .form .title
+{
+    font-weight: 500;
+    line-height: 120%;
+
+    margin-bottom: 40px;
+
+    letter-spacing: -.36px;
+
+    color: var(--primary_text_color);
+}
+
+
+.lk_send_message .form textarea
+{
+    height: 365px;
+}
+
+
+.lk_send_message .form .line
+{
+    margin-bottom: 27px;
+}
+
+
+.lk_send_message .form .file label
+{
+    font-family: var(--font_family2);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 135%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    min-height: 141px;
+    padding: 11px 42px;
+
+    cursor: pointer;
+    text-align: center;
+
+    color: #444143;
+    border: 1px solid var(--form_border_color);
+    border-radius: var(--form_border_radius);
+
+    gap: 13px;
+}
+
+
+.lk_send_message .form .file label .icon
+{
+    display: block;
+
+    width: 16px;
+    height: 16px;
+}
+
+
+.lk_send_message .form .file .btn
+{
+    width: 100%;
+}
+
+
+.lk_send_message .form .file .btn span
+{
+    font-family: var(--font_family);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 120%;
+
+    display: inline-block;
+
+    padding: 7px 43px;
+
+    transition: background .2s linear;
+    vertical-align: top;
+    text-transform: uppercase;
+
+    color: var(--light_text_color);
+    background: rgba(38, 2, 2, .60);
+}
+
+
+.lk_send_message .form .file label:hover .btn span
+{
+    background: var(--primary_color);
+}
+
+
+.lk_send_message .form .submit
+{
+    padding-top: 13px;
+}
+
+
+.lk_send_message .form .submit_btn
+{
+    font-size: var(--font_size_middle);
+    font-weight: 500;
+    line-height: 120%;
+
+    width: auto;
+    margin: 0;
+    padding: 12px 85px;
+
+    transition: background .2s linear;
+    letter-spacing: -.4px;
+    text-transform: uppercase;
+
+    color: var(--light_text_color);
+    background: var(--primary_color);
+}
+
+
+.lk_send_message .form .submit_btn:hover
+{
+    background: var(--primary_text_color);
+}
+
+
+
+@media print,
+(max-width: 1439px)
+{
+    .lk_send_message .message
+    {
+        margin-top: 48px;
+    }
+
+
+    .lk_send_message .answer
+    {
+        margin-top: 28px;
+    }
+}
+
+
+
+@media (max-width: 767px)
+{
+    .lk_send_message .head
+    {
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        gap: 24px;
+    }
+
+
+    .lk_send_message .head .send_message_btn
+    {
+        width: 100%;
+    }
+
+
+    .lk_send_message .answer
+    {
+        margin-top: 48px;
+    }
+
+
+    .lk_send_message .answer .btns.hide
+    {
+        display: flex;
+
+        margin-bottom: -7px;
+    }
+
+
+    .lk_send_message .form
+    {
+        margin-top: 64px;
+    }
+
+
+    .lk_send_message .form .title
+    {
+        display: none;
+    }
+
+
+    .lk_send_message .form .submit_btn
+    {
+        width: 100%;
+        padding: 12px;
+    }
+}

@@ -1,0 +1,156 @@
+/*------------------
+    LK favorites
+------------------*/
+.lk_favorites .row
+{
+    margin-bottom: -60px;
+    margin-left: -49px;
+}
+
+
+.lk_favorites .row > *
+{
+    width: calc(33.333% - 49px);
+    margin-bottom: 60px;
+    margin-left: 49px;
+}
+
+
+.lk_favorites .item .thumb
+{
+    padding-bottom: 115.511%;
+}
+
+
+.lk_favorites .item .name
+{
+    font-size: calc(var(--font_size_title_small) - 4px);
+}
+
+
+.lk_favorites .item .tags
+{
+    font-size: var(--font_size);
+
+    letter-spacing: -.36px;
+
+    color: rgba(38, 2, 2, .60);
+
+    gap: 6px;
+}
+
+
+.lk_favorites .item .price
+{
+    font-size: var(--font_size);
+
+    letter-spacing: -.36px;
+}
+
+
+.lk_favorites .item .link
+{
+    margin-top: 24px;
+}
+
+
+.lk_favorites .item .link a
+{
+    font-size: 15px;
+}
+
+
+
+@media print,
+(max-width: 1439px)
+{
+    .lk_favorites .row
+    {
+        margin-bottom: -48px;
+        margin-left: -40px;
+    }
+
+
+    .lk_favorites .row > *
+    {
+        width: calc(33.333% - 40px);
+        margin-bottom: 48px;
+        margin-left: 40px;
+    }
+}
+
+
+
+@media print,
+(max-width: 1279px)
+{
+    .lk_favorites .row > *
+    {
+        width: calc(50% - 40px);
+    }
+}
+
+
+
+@media print,
+(max-width: 1023px)
+{
+    .lk_favorites .row
+    {
+        margin-left: -24px;
+    }
+
+
+    .lk_favorites .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-left: 24px;
+    }
+}
+
+
+
+@media (max-width: 767px)
+{
+    .lk_favorites .row
+    {
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .lk_favorites .row > *
+    {
+        width: calc(50% - var(--cont_padding));
+        margin-left: var(--cont_padding);
+    }
+}
+
+
+
+@media (max-width: 479px)
+{
+    .lk_favorites .row
+    {
+        margin-left: 0;
+    }
+
+
+    .lk_favorites .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .lk_favorites .item .name
+    {
+        font-size: calc(var(--font_size_title_small) + 4px);
+    }
+
+
+    .lk_favorites .item .tags,
+    .lk_favorites .item .price
+    {
+        font-size: 18px;
+    }
+}
