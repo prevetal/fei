@@ -71,6 +71,8 @@
     padding: 12px;
 
     transition: background .2s linear;
+    text-align: center;
+    text-decoration: none;
     letter-spacing: -.4px;
     text-transform: uppercase;
 

@@ -1,0 +1,163 @@
+/*-----------------------------
+    LK adding questionnaire
+-----------------------------*/
+.lk_adding_questionnaire .form
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    --form_border_radius: 12px;
+    --form_bg_color: rgba(148, 148, 148, .20);
+    --form_placeholder_color: rgba(38, 2, 2, .40);
+}
+
+
+.lk_adding_questionnaire .preferences
+{
+    width: 362px;
+    max-width: 100%;
+    margin-left: auto;
+}
+
+
+.lk_adding_questionnaire .preferences .title
+{
+    font-size: var(--font_size_title_middle);
+    line-height: 120%;
+
+    margin-bottom: 27px;
+
+    letter-spacing: -1.2px;
+    text-transform: uppercase;
+
+    color: var(--primary_text_color);
+}
+
+
+.lk_adding_questionnaire .preferences .section + .section
+{
+    margin-top: 40px;
+}
+
+
+.lk_adding_questionnaire .preferences .sub_title
+{
+    font-family: var(--font_family2);
+    font-size: 18px;
+
+    margin-bottom: 12px;
+
+    color: var(--primary_text_color);
+}
+
+
+.lk_adding_questionnaire .preferences .items
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.lk_adding_questionnaire .preferences .toggle
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+
+
+.lk_adding_questionnaire .preferences .toggle input
+{
+    display: none;
+}
+
+
+.lk_adding_questionnaire .preferences .toggle > div
+{
+    position: relative;
+
+    width: 56px;
+    height: 28px;
+
+    transition: border-color .2s linear;
+
+    border: 1px solid rgba(17, 3, 3, .20);
+    border-radius: 28px;
+}
+
+
+.lk_adding_questionnaire .preferences .toggle .ball
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1px;
+
+    width: 24px;
+    height: 24px;
+    margin: auto 0;
+
+    transition: .2s linear;
+
+    border-radius: 50%;
+    background: rgba(17, 3, 3, .20);
+}
+
+
+.lk_adding_questionnaire .preferences .toggle input:checked + div
+{
+    border-color: var(--primary_color);
+}
+
+.lk_adding_questionnaire .preferences .toggle input:checked + div .ball
+{
+    left: 28px;
+
+    background: var(--primary_color);
+}
+
+
+.lk_adding_questionnaire .preferences .toggle span
+{
+    line-height: 120%;
+
+    width: calc(100% - 90px);
+
+    cursor: pointer;
+    letter-spacing: -.54px;
+
+    color: var(--primary_text_color);
+}
+
+
+.lk_adding_questionnaire .preferences .desc
+{
+    display: none;
+
+    width: 100%;
+    margin-top: 12px;
+}
+
+
+.lk_adding_questionnaire .preferences .items > *:has(input:checked) .desc
+{
+    display: block;
+}
+
+
+.lk_adding_questionnaire .preferences textarea
+{
+    height: 84px;
+    padding: 11px;
+
+    letter-spacing: -.54px;
+}
