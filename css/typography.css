@@ -89,10 +89,15 @@
 }
 
 
-.text_block a
+.text_block b,
+.text_block strong
 {
     font-weight: 600;
+}
 
+
+.text_block a
+{
     color: var(--primary_color);
 
     text-decoration-thickness: 1px;

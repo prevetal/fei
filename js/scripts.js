@@ -292,6 +292,10 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 
 
+	// Custom select - Select2
+	$('select.select2').select2()
+
+
 	// LK - Fairies
 	$('.lk_fairies .item .spoler_btn').click(function(e) {
 		e.preventDefault()

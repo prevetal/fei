@@ -30,6 +30,7 @@
 		<link rel="stylesheet" href="css/fancybox.css">
 		<link rel="stylesheet" href="css/swiper-bundle.min.css">
 		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/select2.min.css">
 
 		<link rel="stylesheet" href="css/global.css">
 		<link rel="stylesheet" href="css/block_head.css">
@@ -204,7 +205,889 @@
 								<form action="" class="form">
 									<div class="data">
 										<div class="section">
-											<div class="title"></div>
+											<div class="title">Загрузка фото</div>
+
+											<div class="desc text_block">
+												<p>Перенесите фото на первое место, чтобы сделать его главным. Фото до 25Мb формата png. jpeg. jpg. webp</p>
+
+												<p><b>Лимит по количеству фотографий 30 шт.</b></p>
+
+												<p>Порядок обновления фотографий анкеты: Удалить старые → Сохранить → Загрузить новые → Сохранить</p>
+											</div>
+
+											<div class="files">
+												<div class="uploaded_image">
+													<button type="button" class="remove_btn">
+														<svg><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+													</button>
+
+													<div class="thumb">
+														<img src="images/tmp/uploaded_image.jpg" alt="" loading="lazy">
+													</div>
+												</div>
+
+												<div class="add_file">
+													<label>
+														<input type="file" name="">
+														<div class="icon"></div>
+													</label>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="section">
+											<div class="title">ПРоверочное видео</div>
+
+											<div class="desc text_block">
+												<p>Загрузите проверочное видео-проходку с девушкой, чью анкету размещаете на FeiRus. Минимальный хронометраж ролика — 10 секунд. Размер файла — до 10 MB. На видео девушка должна быть в полный рост, в руках у неё — листок A4, на котором написано: «Для FeiRus 2L9AV#».</p>
+
+												<p><a href="/">Посмотреть пример проверочного видео.</a></p>
+
+												<p>Проверочное видео не публикуется в общий доступ, оно нужно исключительно для проверки анкеты на соответствие заявленным фото, видит его только модератор FeiRus.</p>
+											</div>
+
+											<div class="files">
+												<div class="uploaded_video">
+													<button type="button" class="remove_btn">
+														<svg><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+													</button>
+
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_video"></use></svg>
+
+													<div>
+														<div class="name">IMG_7878.mov</div>
+														<div class="size">2.74 mb</div>
+													</div>
+												</div>
+
+												<div class="add_file">
+													<label>
+														<input type="file" name="">
+														<div class="icon"></div>
+													</label>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="section">
+											<div class="title">видео</div>
+
+											<div class="desc text_block">
+												<p>Файл до 100 MB формата: FLV, OVI, MOV, MP4, MPEG, WEBM, MKV, 3GP.</p>
+											</div>
+
+											<div class="add_file">
+												<label>
+													<input type="file" name="">
+													<div class="icon"></div>
+												</label>
+											</div>
+										</div>
+
+
+										<div class="section">
+											<div class="title">ПРЕВЬЮ для видео</div>
+
+											<div class="desc text_block">
+												<p>Файл до 10 MB формата:  png. jpeg. jpg. webp</p>
+											</div>
+
+											<div class="add_file">
+												<label>
+													<input type="file" name="">
+													<div class="icon"></div>
+												</label>
+											</div>
+										</div>
+
+
+										<div class="section">
+											<div class="title">Общее</div>
+
+											<div class="line">
+												<div class="label">Раздел</div>
+
+												<div class="field">
+													<select name="" data-placeholder=" ">
+														<option value="1" selected>Проститутки</option>
+														<option value="2">Вариант 2</option>
+														<option value="3">Вариант 3</option>
+													</select>
+
+													<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												</div>
+
+												<div class="exp">Минимальная стоимость часа 3000₽</div>
+											</div>
+
+											<div class="line">
+												<div class="label">Имя</div>
+
+												<div class="field">
+													<input type="text" name="" value="" class="input">
+												</div>
+
+												<div class="exp">Видно на сайте</div>
+											</div>
+
+											<div class="line">
+												<div class="label">Название анкеты для иностранцев</div>
+
+												<div class="field">
+													<input type="text" name="" value="" class="input">
+												</div>
+
+												<div class="exp">Видно на сайте</div>
+											</div>
+
+											<div class="line">
+												<div class="label">Коротко</div>
+
+												<div class="field">
+													<textarea name="" maxlength="130"></textarea>
+												</div>
+
+												<div class="exp">До 130 символов</div>
+											</div>
+
+											<div class="line">
+												<div class="label">Полностью</div>
+
+												<div class="field">
+													<textarea name="" minlength="200" placeholder="Напишите полное описание"></textarea>
+												</div>
+
+												<div class="exp">Минимум 200 символов</div>
+											</div>
+
+											<div class="line">
+												<div class="label">Телефон</div>
+
+												<div class="field">
+													<input type="text" name="" value="" class="input" placeholder="+7 ( 999 ) 999 - 99 - 99">
+												</div>
+
+												<div class="exp">Минимум 200 символов</div>
+											</div>
+
+											<div class="line">
+												<div class="label">Telegram</div>
+
+												<div class="field">
+													<input type="text" name="" value="" class="input" placeholder="@name">
+												</div>
+
+												<div class="exp">Минимум 200 символов</div>
+											</div>
+
+											<div class="line">
+												<div class="label">WhatsApp</div>
+
+												<div class="field">
+													<input type="text" name="" value="" class="input" placeholder="+7 ( 999 ) 999 - 99 - 99">
+												</div>
+
+												<div class="exp">Минимум 200 символов</div>
+											</div>
+
+											<div class="line">
+												<div class="label">Ссылка на криптокошелек</div>
+
+												<div class="field">
+													<input type="text" name="" value="" class="input">
+												</div>
+
+												<div class="exp">Рекомендуем использовать <a href="/" target="_blank">Name</a></div>
+											</div>
+
+											<div class="line">
+												<div class="label">Время</div>
+
+												<div class="time_range">
+													<div class="field">
+														<select name="" data-placeholder="00:00">
+															<option value="1">00:00</option>
+															<option value="2">01:00</option>
+															<option value="3">02:00</option>
+														</select>
+
+														<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+													</div>
+
+													<div class="sep">–</div>
+
+													<div class="field">
+														<select name="" data-placeholder="00:00">
+															<option value="1">00:00</option>
+															<option value="2">01:00</option>
+															<option value="3">02:00</option>
+														</select>
+
+														<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+													</div>
+												</div>
+
+												<div class="exp">Удобное время для звонков</div>
+											</div>
+
+											<div class="line">
+												<div class="label">Отвечаю на</div>
+
+												<div class="field">
+													<label class="toggle">
+														<input type="checkbox" name="">
+
+														<div><div class="ball"></div></div>
+
+														<span>Звонки</span>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="toggle">
+														<input type="checkbox" name="">
+
+														<div><div class="ball"></div></div>
+
+														<span>Sms</span>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="toggle">
+														<input type="checkbox" name="">
+
+														<div><div class="ball"></div></div>
+
+														<span>Telegram</span>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="toggle">
+														<input type="checkbox" name="">
+
+														<div><div class="ball"></div></div>
+
+														<span>WhatsApp</span>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="toggle">
+														<input type="checkbox" name="">
+
+														<div><div class="ball"></div></div>
+
+														<span>Viber</span>
+													</label>
+												</div>
+											</div>
+
+											<div class="line">
+												<div class="label">Не моложе (мин. 18)</div>
+
+												<div class="field">
+													<input type="number" name="" value="" class="input">
+												</div>
+
+												<div class="exp">лет (если есть ограничения)</div>
+											</div>
+
+											<div class="line">
+												<div class="label">Не старше</div>
+
+												<div class="field">
+													<input type="number" name="" value="" class="input">
+												</div>
+
+												<div class="exp">лет (если есть ограничения)</div>
+											</div>
+
+											<div class="line">
+												<div class="label">Теги</div>
+
+												<div class="field">
+													<select name="" multiple class="skip select2" data-placeholder="Выберите">
+														<option value="1">Вариант 1</option>
+														<option value="2">Вариант 2</option>
+														<option value="3">Вариант 3</option>
+													</select>
+
+													<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="section">
+											<div class="title">ФИГУРА</div>
+
+											<div class="columns">
+												<div class="line">
+													<div class="label">Возраст</div>
+
+													<div class="field">
+														<input type="number" name="" value="" class="input">
+													</div>
+
+													<div class="exp">лет</div>
+												</div>
+
+												<div class="line">
+													<div class="label">Размер груди</div>
+
+													<div class="field">
+														<input type="number" name="" value="" class="input">
+													</div>
+
+													<div class="exp">1-2</div>
+												</div>
+
+												<div class="line">
+													<div class="label">Вес</div>
+
+													<div class="field">
+														<input type="number" name="" value="" class="input">
+													</div>
+
+													<div class="exp">кг (30-200)</div>
+												</div>
+
+												<div class="line">
+													<div class="label">Рост</div>
+
+													<div class="field">
+														<input type="number" name="" value="" class="input">
+													</div>
+
+													<div class="exp">см (120-200)</div>
+												</div>
+
+												<div class="line">
+													<div class="label">Размер одежды</div>
+
+													<div class="field">
+														<input type="number" name="" value="" class="input">
+													</div>
+
+													<div class="exp">36-80</div>
+												</div>
+
+												<div class="line">
+													<div class="label">Размер обуви</div>
+
+													<div class="field">
+														<input type="number" name="" value="" class="input">
+													</div>
+
+													<div class="exp">35-46</div>
+												</div>
+											</div>
+
+											<div class="line">
+												<div class="label">Телосложение</div>
+
+												<div class="field">
+													<select name="" data-placeholder="Выберите">
+														<option value="1">Вариант 1</option>
+														<option value="2">Вариант 2</option>
+														<option value="3">Вариант 3</option>
+													</select>
+
+													<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												</div>
+											</div>
+
+											<div class="line">
+												<div class="label">Интимная стрижка</div>
+
+												<div class="field">
+													<select name="" data-placeholder="Выберите">
+														<option value="1">Вариант 1</option>
+														<option value="2">Вариант 2</option>
+														<option value="3">Вариант 3</option>
+													</select>
+
+													<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												</div>
+											</div>
+
+											<div class="line">
+												<div class="label">Боди арт</div>
+
+												<div class="field">
+													<label class="toggle">
+														<input type="checkbox" name="">
+
+														<div><div class="ball"></div></div>
+
+														<span>Татуировки</span>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="toggle">
+														<input type="checkbox" name="">
+
+														<div><div class="ball"></div></div>
+
+														<span>Силикон в груди</span>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="toggle">
+														<input type="checkbox" name="">
+
+														<div><div class="ball"></div></div>
+
+														<span>Пирсинг</span>
+													</label>
+												</div>
+											</div>
+
+											<div class="line">
+												<div class="label">Цвет волос</div>
+
+												<div class="field">
+													<select name="" data-placeholder="Выберите">
+														<option value="1">Вариант 1</option>
+														<option value="2">Вариант 2</option>
+														<option value="3">Вариант 3</option>
+													</select>
+
+													<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												</div>
+											</div>
+
+											<div class="line">
+												<div class="label">Внешность</div>
+
+												<div class="field">
+													<select name="" data-placeholder="Выберите">
+														<option value="1">Вариант 1</option>
+														<option value="2">Вариант 2</option>
+														<option value="3">Вариант 3</option>
+													</select>
+
+													<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												</div>
+											</div>
+
+											<div class="line">
+												<div class="label">Национальность</div>
+
+												<div class="field">
+													<select name="" data-placeholder="Выберите">
+														<option value="1">Вариант 1</option>
+														<option value="2">Вариант 2</option>
+														<option value="3">Вариант 3</option>
+													</select>
+
+													<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="section">
+											<div class="title">Подружки</div>
+
+											<div class="line">
+												<div class="field">
+													<input type="number" name="" value="" class="input" placeholder="Введите ID анкеты">
+												</div>
+											</div>
+										</div>
+
+
+										<div class="section">
+											<div class="title">ГЕОГРАФИЯ</div>
+
+											<div class="line">
+												<div class="label">Город</div>
+
+												<div class="field">
+													<select name="" data-placeholder="Выберите">
+														<option value="1">Вариант 1</option>
+														<option value="2">Вариант 2</option>
+														<option value="3">Вариант 3</option>
+													</select>
+
+													<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												</div>
+
+												<div class="map"></div>
+											</div>
+
+											<div class="line">
+												<div class="field">
+													<label class="toggle">
+														<input type="checkbox" name="">
+
+														<div><div class="ball"></div></div>
+
+														<span>Апартаменты</span>
+													</label>
+												</div>
+											</div>
+
+											<div class="line">
+												<div class="label">Выезд</div>
+
+												<div class="field">
+													<label class="toggle">
+														<input type="checkbox" name="">
+
+														<div><div class="ball"></div></div>
+
+														<span>Квартиры</span>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="toggle">
+														<input type="checkbox" name="">
+
+														<div><div class="ball"></div></div>
+
+														<span>Гостиницы</span>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="toggle">
+														<input type="checkbox" name="">
+
+														<div><div class="ball"></div></div>
+
+														<span>Сауны</span>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="toggle">
+														<input type="checkbox" name="">
+
+														<div><div class="ball"></div></div>
+
+														<span>Офисы</span>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="toggle">
+														<input type="checkbox" name="">
+
+														<div><div class="ball"></div></div>
+
+														<span>За город</span>
+													</label>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="section">
+											<div class="title">Расценки</div>
+
+											<div class="line">
+												<div class="exp">Минимальная стоимость часа 3000 ₽</div>
+											</div>
+
+											<div class="line prices">
+												<div class="label big">Днем</div>
+
+												<div class="row">
+													<div class="period">1 час</div>
+
+													<div class="col">
+														<div class="label">Апартаменты</div>
+
+														<div class="field">
+															<input type="number" name="" value="" class="input" placeholder="">
+														</div>
+													</div>
+
+													<div class="currency">₽</div>
+
+													<div class="col">
+														<div class="label">Выезд</div>
+
+														<div class="field">
+															<input type="number" name="" value="" class="input" placeholder="">
+														</div>
+													</div>
+
+													<div class="currency">₽</div>
+												</div>
+
+												<div class="row">
+													<div class="period">2 часа</div>
+
+													<div class="col">
+														<div class="field">
+															<input type="number" name="" value="" class="input" placeholder="">
+														</div>
+													</div>
+
+													<div class="currency">₽</div>
+
+													<div class="col">
+														<div class="field">
+															<input type="number" name="" value="" class="input" placeholder="">
+														</div>
+													</div>
+
+													<div class="currency">₽</div>
+												</div>
+											</div>
+
+											<div class="line prices">
+												<div class="label big">Ночью</div>
+
+												<div class="row">
+													<div class="period">1 час</div>
+
+													<div class="col">
+														<div class="label">Апартаменты</div>
+
+														<div class="field">
+															<input type="number" name="" value="" class="input" placeholder="">
+														</div>
+													</div>
+
+													<div class="currency">₽</div>
+
+													<div class="col">
+														<div class="label">Выезд</div>
+
+														<div class="field">
+															<input type="number" name="" value="" class="input" placeholder="">
+														</div>
+													</div>
+
+													<div class="currency">₽</div>
+												</div>
+
+												<div class="row">
+													<div class="period">2 часа</div>
+
+													<div class="col">
+														<div class="field">
+															<input type="number" name="" value="" class="input" placeholder="">
+														</div>
+													</div>
+
+													<div class="currency">₽</div>
+
+													<div class="col">
+														<div class="field">
+															<input type="number" name="" value="" class="input" placeholder="">
+														</div>
+													</div>
+
+													<div class="currency">₽</div>
+												</div>
+											</div>
+
+											<div class="line">
+												<div class="label">Дорога на выезде</div>
+
+												<div class="field">
+													<select name="" data-placeholder="Выберите">
+														<option value="1" selected>Не выезжаю/</option>
+														<option value="2">Вариант 2</option>
+														<option value="3">Вариант 3</option>
+													</select>
+
+													<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												</div>
+											</div>
+
+											<div class="line">
+												<div class="label">Экспресс</div>
+
+												<div class="field">
+													<input type="text" name="" value="" class="input">
+												</div>
+
+												<div class="exp">1 контакт, только классический секс, не более 30 минут, у Вас, только для русскоязычных. Чтобы не портить работу по основным ценам, эта информация в анкете не будет отображаться, а будет показываться только в результате поиска тем, кто ищет именно экспресс</div>
+											</div>
+
+											<div class="line">
+												<div class="field big_w">
+													<label class="toggle">
+														<input type="checkbox" name="">
+
+														<div><div class="ball"></div></div>
+
+														<span>Не отображать предупреждение о предоплате</span>
+													</label>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="section">
+											<div class="title">Расценки</div>
+
+											<div class="line">
+												<div class="label">Выберите язык</div>
+
+												<div class="field">
+													<select name="" data-placeholder="Выберите язык">
+														<option value="1" selected>Вариант 1</option>
+														<option value="2">Вариант 2</option>
+														<option value="3">Вариант 3</option>
+													</select>
+
+													<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												</div>
+											</div>
+
+											<div class="line prices">
+												<div class="label big">Днем</div>
+
+												<div class="row">
+													<div class="period">1 час</div>
+
+													<div class="col">
+														<div class="label">Апартаменты</div>
+
+														<div class="field">
+															<input type="number" name="" value="" class="input" placeholder="">
+														</div>
+													</div>
+
+													<div class="currency">₽</div>
+
+													<div class="col">
+														<div class="label">Выезд</div>
+
+														<div class="field">
+															<input type="number" name="" value="" class="input" placeholder="">
+														</div>
+													</div>
+
+													<div class="currency">₽</div>
+												</div>
+
+												<div class="row">
+													<div class="period">2 часа</div>
+
+													<div class="col">
+														<div class="field">
+															<input type="number" name="" value="" class="input" placeholder="">
+														</div>
+													</div>
+
+													<div class="currency">₽</div>
+
+													<div class="col">
+														<div class="field">
+															<input type="number" name="" value="" class="input" placeholder="">
+														</div>
+													</div>
+
+													<div class="currency">₽</div>
+												</div>
+											</div>
+
+											<div class="line prices">
+												<div class="label big">Ночью</div>
+
+												<div class="row">
+													<div class="period">1 час</div>
+
+													<div class="col">
+														<div class="label">Апартаменты</div>
+
+														<div class="field">
+															<input type="number" name="" value="" class="input" placeholder="">
+														</div>
+													</div>
+
+													<div class="currency">₽</div>
+
+													<div class="col">
+														<div class="label">Выезд</div>
+
+														<div class="field">
+															<input type="number" name="" value="" class="input" placeholder="">
+														</div>
+													</div>
+
+													<div class="currency">₽</div>
+												</div>
+
+												<div class="row">
+													<div class="period">2 часа</div>
+
+													<div class="col">
+														<div class="field">
+															<input type="number" name="" value="" class="input" placeholder="">
+														</div>
+													</div>
+
+													<div class="currency">₽</div>
+
+													<div class="col">
+														<div class="field">
+															<input type="number" name="" value="" class="input" placeholder="">
+														</div>
+													</div>
+
+													<div class="currency">₽</div>
+												</div>
+											</div>
+
+											<div class="line">
+												<div class="label">Отключить публикации в каналах</div>
+
+												<div class="field">
+													<label class="toggle">
+														<input type="checkbox" name="">
+
+														<div><div class="ball"></div></div>
+
+														<span>Название канала</span>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="toggle">
+														<input type="checkbox" name="">
+
+														<div><div class="ball"></div></div>
+
+														<span>Название канала</span>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="toggle">
+														<input type="checkbox" name="">
+
+														<div><div class="ball"></div></div>
+
+														<span>Название канала</span>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="toggle">
+														<input type="checkbox" name="">
+
+														<div><div class="ball"></div></div>
+
+														<span>Название канала</span>
+													</label>
+												</div>
+											</div>
 										</div>
 									</div>
 
@@ -906,6 +1789,11 @@
 											</div>
 										</div>
 									</div>
+
+
+									<div class="submit">
+										<button type="submit" class="submit_btn">Сохранить</button>
+									</div>
 								</form>
 							</div>
 						</section>
@@ -1146,6 +2034,8 @@
 		<script src="js/functions.js"></script>
 		<script src="js/fancybox.js"></script>
 		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/nice-select2.js"></script>
+		<script src="js/select2.min.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
 </html>
