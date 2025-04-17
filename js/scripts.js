@@ -26,6 +26,14 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 	})
 
+	$('.mini_modal .close_btn').click(function(e) {
+		e.preventDefault()
+
+		$('.mini_modal, .mini_modal_btn').removeClass('active')
+
+		if (is_touch_device()) $('body').css('cursor', 'default')
+	})
+
 	// Close the popup when clicking outside of it
 	$(document).click(e => {
 		if ($(e.target).closest('.modal_cont').length === 0) {

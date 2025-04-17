@@ -86,39 +86,9 @@
 }
 
 
-.fairy_reviews .review .spoler_btn
-{
-    font-size: var(--font_size_middle);
-    line-height: 120%;
-
-    margin-top: 8px;
-    margin-left: auto;
-
-    text-decoration: underline;
-    letter-spacing: -.6px;
-
-    text-decoration-thickness: 1px;
-}
-
-
-.fairy_reviews .review .spoler_btn span + span,
-.fairy_reviews .review .spoler_btn.active span
-{
-    display: none;
-}
-
-
-.fairy_reviews .review .spoler_btn.active span + span
-{
-    display: inline;
-}
-
-
 
 .fairy_reviews .review .answer
 {
-    display: none;
-
     width: 100%;
     margin-top: 32px;
 }
@@ -264,8 +234,7 @@
 
 
 
-@media print,
-(max-width: 767px)
+@media (max-width: 767px)
 {
     .fairy_reviews .map
     {
